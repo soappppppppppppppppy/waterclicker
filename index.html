@@ -31,7 +31,6 @@
             color: #00d4ff;
         }
 
-        /* Futuristic Grid Background */
         body::before {
             content: '';
             position: fixed;
@@ -191,10 +190,6 @@
             background: linear-gradient(135deg, #ff33ff, #ff00ff);
         }
 
-        .admin-button:active {
-            transform: translateY(-1px);
-        }
-
         .admin-button-group {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -253,7 +248,6 @@
             padding: 20px;
             background: linear-gradient(135deg, rgba(50, 0, 100, 0.5) 0%, rgba(20, 0, 50, 0.5) 100%);
             border: 2px solid #8800ff;
-            border-radius: 0;
         }
 
         .rebirth-shop-section-title {
@@ -272,7 +266,6 @@
         .rebirth-item-enhanced {
             background: linear-gradient(135deg, rgba(80, 0, 80, 0.6) 0%, rgba(40, 0, 40, 0.6) 100%);
             border: 2px solid #8800ff;
-            border-radius: 0;
             padding: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -325,7 +318,6 @@
             font-weight: 600;
             background: rgba(255, 0, 255, 0.2);
             padding: 6px;
-            border-radius: 0;
             color: #ff00ff;
             border: 1px solid rgba(255, 0, 255, 0.3);
             display: inline-block;
@@ -339,7 +331,6 @@
             gap: 12px;
         }
 
-        /* SAVE INDICATOR */
         .save-indicator {
             position: fixed;
             top: 20px;
@@ -390,7 +381,6 @@
             background: #00ffaa;
         }
 
-        /* SPACEBAR INDICATOR */
         .spacebar-hint {
             position: fixed;
             bottom: 20px;
@@ -407,7 +397,6 @@
             letter-spacing: 1px;
         }
 
-        /* INFO BUBBLE */
         .info-bubble {
             position: fixed;
             top: 20px;
@@ -555,10 +544,8 @@
             border-radius: 10px;
         }
 
-        /* STATS PANEL */
         .stats-panel {
             background: linear-gradient(135deg, rgba(10, 20, 40, 0.9) 0%, rgba(20, 40, 80, 0.9) 100%);
-            border-radius: 0;
             padding: 25px;
             box-shadow: 0 0 30px rgba(0, 212, 255, 0.3), inset 0 0 20px rgba(0, 212, 255, 0.1);
             border: 2px solid #00d4ff;
@@ -615,10 +602,8 @@
             50% { opacity: 0.7; }
         }
 
-        /* CLICK AREA */
         .click-area {
             background: linear-gradient(135deg, rgba(0, 20, 50, 0.95) 0%, rgba(0, 40, 80, 0.95) 100%);
-            border-radius: 0;
             padding: 60px 40px;
             text-align: center;
             box-shadow: 0 0 40px rgba(0, 212, 255, 0.4), inset 0 0 30px rgba(0, 212, 255, 0.1);
@@ -664,7 +649,6 @@
             box-shadow: 0 0 30px rgba(0, 212, 255, 0.3), inset 0 0 20px rgba(0, 212, 255, 0.1);
         }
 
-        /* Water Droplet */
         .water-droplet-container {
             position: relative;
             width: 160px;
@@ -682,10 +666,7 @@
             background: linear-gradient(135deg, #0088ff 0%, #00ffff 100%);
             border-radius: 50% 50% 50% 0;
             transform: rotate(-45deg);
-            box-shadow: 
-                0 0 30px rgba(0, 212, 255, 0.6),
-                inset -10px -10px 30px rgba(0, 0, 0, 0.3),
-                inset 15px 15px 30px rgba(0, 255, 255, 0.2);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.6), inset -10px -10px 30px rgba(0, 0, 0, 0.3), inset 15px 15px 30px rgba(0, 255, 255, 0.2);
             animation: dropletBounce 1.5s ease-in-out infinite;
             filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.4));
         }
@@ -741,7 +722,6 @@
             font-weight: 600;
             background: linear-gradient(135deg, #00ffff, #0088ff);
             padding: 10px 20px;
-            border-radius: 0;
             display: inline-block;
             margin: 15px auto 0;
             position: relative;
@@ -752,7 +732,6 @@
             font-family: 'Orbitron', monospace;
         }
 
-        /* SIDEBAR */
         .sidebar {
             display: flex;
             flex-direction: column;
@@ -780,7 +759,6 @@
             color: #00ffff;
             border: 2px solid #00d4ff;
             padding: 14px;
-            border-radius: 0;
             font-size: 14px;
             font-weight: 600;
             cursor: pointer;
@@ -835,7 +813,6 @@
             text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
         }
 
-        /* MODALS */
         .modal {
             display: none;
             position: fixed;
@@ -859,7 +836,6 @@
             background: linear-gradient(135deg, rgba(10, 20, 40, 0.95) 0%, rgba(20, 40, 80, 0.95) 100%);
             margin: 20px auto;
             padding: 30px;
-            border-radius: 0;
             width: 90%;
             max-width: 1000px;
             max-height: 90vh;
@@ -927,7 +903,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 0;
             flex-shrink: 0;
             box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
         }
@@ -950,7 +925,6 @@
         .upgrade-item {
             background: linear-gradient(135deg, rgba(0, 40, 80, 0.8) 0%, rgba(0, 20, 50, 0.8) 100%);
             border: 2px solid #0088ff;
-            border-radius: 0;
             padding: 20px;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -982,12 +956,6 @@
             transform: translateY(-5px);
             box-shadow: 0 0 30px rgba(0, 212, 255, 0.4), inset 0 0 15px rgba(0, 212, 255, 0.1);
             background: linear-gradient(135deg, rgba(0, 60, 120, 0.9) 0%, rgba(0, 30, 70, 0.9) 100%);
-        }
-
-        .upgrade-item.purchased {
-            background: linear-gradient(135deg, rgba(0, 150, 100, 0.8) 0%, rgba(0, 80, 60, 0.8) 100%);
-            border-color: #00ffaa;
-            box-shadow: 0 0 20px rgba(0, 255, 170, 0.3), inset 0 0 10px rgba(0, 255, 170, 0.1);
         }
 
         .upgrade-item.locked {
@@ -1040,68 +1008,15 @@
             color: #000;
             background: linear-gradient(135deg, #00ffff, #0088ff);
             padding: 6px 12px;
-            border-radius: 0;
             display: inline-block;
             box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
             font-family: 'Courier New', monospace;
             border: 1px solid #00ffff;
         }
 
-        .rebirth-item {
-            background: linear-gradient(135deg, rgba(80, 0, 80, 0.6) 0%, rgba(40, 0, 40, 0.6) 100%);
-            border: 2px solid #8800ff;
-            border-radius: 0;
-            padding: 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 15px rgba(136, 0, 255, 0.2), inset 0 0 10px rgba(136, 0, 255, 0.05);
-        }
-
-        .rebirth-item:hover:not(.locked) {
-            background: linear-gradient(135deg, rgba(120, 0, 120, 0.8) 0%, rgba(60, 0, 60, 0.8) 100%);
-            border-color: #ff00ff;
-            transform: translateY(-5px);
-            box-shadow: 0 0 25px rgba(255, 0, 255, 0.4), inset 0 0 15px rgba(255, 0, 255, 0.1);
-        }
-
-        .rebirth-item.locked {
-            opacity: 0.4;
-            cursor: not-allowed;
-        }
-
-        .rebirth-item-name {
-            font-weight: 700;
-            font-size: 14px;
-            margin-bottom: 6px;
-            color: #ff00ff;
-            text-shadow: 0 0 8px rgba(255, 0, 255, 0.4);
-        }
-
-        .rebirth-item-cost {
-            font-size: 11px;
-            margin-bottom: 6px;
-            opacity: 0.9;
-            font-weight: 600;
-            color: #ff00ff;
-            font-family: 'Courier New', monospace;
-        }
-
-        .rebirth-item-effect {
-            font-size: 12px;
-            font-weight: 600;
-            background: rgba(255, 0, 255, 0.2);
-            padding: 6px;
-            border-radius: 0;
-            color: #ff00ff;
-            border: 1px solid rgba(255, 0, 255, 0.3);
-        }
-
         .rebirth-panel {
             background: linear-gradient(135deg, rgba(80, 0, 80, 0.95) 0%, rgba(40, 0, 40, 0.95) 100%);
             color: #ff00ff;
-            border-radius: 0;
             padding: 40px;
             text-align: center;
             box-shadow: 0 0 50px rgba(255, 0, 255, 0.4), inset 0 0 30px rgba(255, 0, 255, 0.1);
@@ -1130,7 +1045,6 @@
             margin: 25px 0;
             padding: 20px;
             background: rgba(0, 0, 0, 0.3);
-            border-radius: 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
@@ -1165,7 +1079,6 @@
             background: linear-gradient(135deg, #ff00ff, #cc00ff);
             color: #fff;
             border: 2px solid #ff00ff;
-            border-radius: 0;
             font-weight: bold;
             font-size: 15px;
             cursor: pointer;
@@ -1190,11 +1103,9 @@
             cursor: not-allowed;
         }
 
-        /* COMING SOON MODAL */
         .coming-soon-panel {
             background: linear-gradient(135deg, rgba(0, 100, 200, 0.95) 0%, rgba(0, 50, 150, 0.95) 100%);
             color: #00ffff;
-            border-radius: 0;
             padding: 40px;
             text-align: center;
             box-shadow: 0 0 50px rgba(0, 212, 255, 0.4), inset 0 0 30px rgba(0, 212, 255, 0.1);
@@ -1226,7 +1137,6 @@
             margin-top: 25px;
             padding: 20px;
             background: rgba(0, 0, 0, 0.3);
-            border-radius: 0;
             border: 2px solid rgba(0, 212, 255, 0.3);
         }
 
@@ -1247,7 +1157,6 @@
             border: 2px solid #00ffff;
             color: #00ffff;
             padding: 12px 15px;
-            border-radius: 0;
             font-family: 'Courier New', monospace;
             font-weight: 600;
             font-size: 14px;
@@ -1257,6 +1166,72 @@
             outline: none;
             border-color: #ff00ff;
             box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+        }
+
+        .notification {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background: linear-gradient(135deg, rgba(0, 200, 100, 0.95) 0%, rgba(0, 150, 75, 0.95) 100%);
+            color: #fff;
+            padding: 14px 22px;
+            box-shadow: 0 0 25px rgba(0, 255, 136, 0.5);
+            animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 2000;
+            border: 2px solid #00ffaa;
+            font-weight: 600;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 1px;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(0, 100, 200, 0.8) 0%, rgba(0, 50, 150, 0.8) 100%);
+            color: #00ffff;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), inset 0 0 10px rgba(0, 212, 255, 0.1);
+            border: 2px solid #00d4ff;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), inset 0 0 15px rgba(0, 212, 255, 0.2);
+        }
+
+        .stat-card-label {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: 'Courier New', monospace;
+            color: #00ffff;
+        }
+
+        .stat-card-value {
+            font-size: 22px;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+            font-family: 'Courier New', monospace;
         }
 
         @media (max-width: 1200px) {
@@ -1366,74 +1341,6 @@
                 max-height: 90vh;
             }
         }
-
-        .notification {
-            position: fixed;
-            bottom: 100px;
-            right: 20px;
-            background: linear-gradient(135deg, rgba(0, 200, 100, 0.95) 0%, rgba(0, 150, 75, 0.95) 100%);
-            color: #fff;
-            padding: 14px 22px;
-            border-radius: 0;
-            box-shadow: 0 0 25px rgba(0, 255, 136, 0.5);
-            animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            z-index: 2000;
-            border: 2px solid #00ffaa;
-            font-weight: 600;
-            font-family: 'Courier New', monospace;
-            letter-spacing: 1px;
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateX(400px);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, rgba(0, 100, 200, 0.8) 0%, rgba(0, 50, 150, 0.8) 100%);
-            color: #00ffff;
-            padding: 18px;
-            border-radius: 0;
-            text-align: center;
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), inset 0 0 10px rgba(0, 212, 255, 0.1);
-            border: 2px solid #00d4ff;
-            transition: all 0.3s ease;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), inset 0 0 15px rgba(0, 212, 255, 0.2);
-        }
-
-        .stat-card-label {
-            font-size: 12px;
-            opacity: 0.9;
-            margin-bottom: 8px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            font-family: 'Courier New', monospace;
-            color: #00ffff;
-        }
-
-        .stat-card-value {
-            font-size: 22px;
-            font-weight: 700;
-            text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
-            font-family: 'Courier New', monospace;
-        }
     </style>
 </head>
 <body>
@@ -1446,7 +1353,6 @@
         
         <div class="admin-header">⚙️ ADMIN PANEL</div>
 
-        <!-- WATER SECTION -->
         <div class="admin-section">
             <div class="admin-section-title">💧 WATER MANAGEMENT</div>
             <div class="admin-input-group">
@@ -1461,7 +1367,6 @@
             </div>
         </div>
 
-        <!-- REBIRTHS SECTION -->
         <div class="admin-section">
             <div class="admin-section-title">▶ REBIRTH MANAGEMENT</div>
             <div class="admin-input-group">
@@ -1476,7 +1381,6 @@
             </div>
         </div>
 
-        <!-- MULTIPLIER SECTION -->
         <div class="admin-section">
             <div class="admin-section-title">◆ MULTIPLIER MANAGEMENT</div>
             <div class="admin-input-group">
@@ -1486,23 +1390,6 @@
             </div>
         </div>
 
-        <!-- UPGRADES SECTION -->
-        <div class="admin-section">
-            <div class="admin-section-title">▲ UPGRADES MANAGEMENT</div>
-            <div class="admin-input-group">
-                <label>UPGRADE ID:</label>
-                <input type="number" id="adminUpgradeId" class="admin-input" placeholder="1">
-            </div>
-            <div class="admin-input-group">
-                <label>QUANTITY:</label>
-                <input type="number" id="adminUpgradeQty" class="admin-input" placeholder="1">
-                <button class="admin-button" onclick="adminSetUpgrade()">SET</button>
-            </div>
-            <button class="admin-button" onclick="adminBuyAllUpgrades()" style="width: 100%; margin-top: 10px;">BUY ALL UPGRADES</button>
-            <button class="admin-button" onclick="adminResetUpgrades()" style="width: 100%; margin-top: 10px;">RESET UPGRADES</button>
-        </div>
-
-        <!-- QUICK ACTIONS -->
         <div class="admin-section">
             <div class="admin-section-title">⚡ QUICK ACTIONS</div>
             <div class="admin-button-group">
@@ -1515,10 +1402,9 @@
             </div>
         </div>
 
-        <!-- RESET SECTION -->
         <div class="admin-section">
-            <div class="admin-section-title">🔄 RESET ACTIONS</div>
-            <button class="admin-button" onclick="adminResetAll()" style="width: 100%; background: linear-gradient(135deg, #ff3333, #cc0000);">RESET ENTIRE GAME</button>
+            <div class="admin-section-title">🔄 RESET</div>
+            <button class="admin-button" onclick="adminResetAll()" style="width: 100%; background: linear-gradient(135deg, #ff3333, #cc0000);">RESET ALL</button>
         </div>
     </div>
 
@@ -1541,7 +1427,7 @@
         <div class="info-section">
             <div class="info-section-title">🎮 HOW TO PLAY</div>
             <div class="info-section-content">
-                Click the water drop (or press SPACEBAR) to collect water! Use your water to buy upgrades from the shop that give you more water per second or increased click power. Once you have enough water, you can Rebirth to gain permanent multipliers! Now with 129 UPGRADES that go up to 1 Decillion and beyond!
+                Click the water drop (or press SPACEBAR) to collect water! Use your water to buy upgrades from the shop. Once you have enough water, Rebirth to gain permanent multipliers!
             </div>
         </div>
 
@@ -1549,20 +1435,13 @@
             <div class="info-section-title">⌨️ CONTROLS</div>
             <div class="info-section-content">
                 <strong>Mouse Click:</strong> Click the water drop<br>
-                <strong>SPACEBAR:</strong> Click the water drop automatically<br>
+                <strong>SPACEBAR:</strong> Click automatically<br>
                 <strong>Type "KevinC":</strong> Unlock Admin Panel
             </div>
         </div>
 
-        <div class="info-section">
-            <div class="info-section-title">🚀 129 UPGRADES!</div>
-            <div class="info-section-content">
-                We've massively expanded the upgrade list! Get production bonuses all the way to 1 Decillion and beyond. After rebirths, you won't repeat the same upgrades - there's always something new to buy!
-            </div>
-        </div>
-
         <div class="info-credits">
-            👨‍💻 Game suggested by K.C - Credits to him for the inspiration! 🙏
+            👨‍💻 Game suggested by K.C - Credits for inspiration! 🙏
         </div>
     </div>
 
@@ -1597,7 +1476,6 @@
                 </div>
             </div>
 
-            <!-- CLICK AREA -->
             <div class="click-area" id="clickArea">
                 <div class="water-droplet-container">
                     <div class="water-droplet-bg"></div>
@@ -1622,7 +1500,7 @@
     <div id="upgradesModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span>▲ WATER SHOP (129 UPGRADES!)</span>
+                <span>▲ WATER SHOP</span>
                 <button class="close-btn" onclick="closeModal('upgradesModal')">[X]</button>
             </div>
             <div class="upgrade-grid" id="upgradesGrid"></div>
@@ -1632,7 +1510,11 @@
     <!-- Rebirth Shop Modal -->
     <div id="rebirthShopModal" class="modal">
         <div class="modal-content">
-            <div id="rebirthShopCategorized"></div>
+            <div class="modal-header">
+                <span>◆ REBIRTH SHOP</span>
+                <button class="close-btn" onclick="closeModal('rebirthShopModal')">[X]</button>
+            </div>
+            <div id="rebirthShopContent"></div>
         </div>
     </div>
 
@@ -1677,61 +1559,211 @@
     </div>
 
     <script>
-        // ======== COMING SOON MENU INPUT DETECTION ========
-        let comingSoonBuffer = '';
+        // ======== GAME STATE ========
+        const gameState = {
+            water: 0,
+            waterPerSecond: 0,
+            globalMultiplier: 1,
+            totalRebirths: 0,
+            totalClicks: 0,
+            rebirthPoints: 0,
+            upgradeCounts: {},
+            rebirthUpgrades: {}
+        };
+
+        // ======== UPGRADES DATA ========
+        const upgrades = [
+            { id: 1, name: "Water Bucket", wpsBonus: 0.75, baseCost: 10, icon: "🪣", desc: "WPS +0.75" },
+            { id: 2, name: "Small Pump", wpsBonus: 3.75, baseCost: 50, icon: "🚰", desc: "WPS +3.75" },
+            { id: 3, name: "Medium Pump", wpsBonus: 15, baseCost: 200, icon: "🚰", desc: "WPS +15" },
+            { id: 4, name: "Large Pump", wpsBonus: 37.5, baseCost: 800, icon: "🚰", desc: "WPS +37.5" },
+            { id: 5, name: "Water Tower", wpsBonus: 375, baseCost: 10000, icon: "🏗️", desc: "WPS +375" },
+            { id: 6, name: "Power Click", clickBonus: 75, baseCost: 3000, icon: "✨", desc: "Click +75" },
+            { id: 7, name: "Super Click", clickBonus: 400, baseCost: 15000, icon: "⚡", desc: "Click +400" },
+            { id: 8, name: "Mega Click", clickBonus: 2000, baseCost: 100000, icon: "💥", desc: "Click +2000" },
+        ];
+
+        const rebirthShopItems = [
+            { id: 1, name: "Multiplier +0.5x", desc: "Gain +0.5x multiplier", baseCost: 10, multiplierBoost: 0.5, icon: "📈", category: "MULTIPLIERS" },
+            { id: 2, name: "Multiplier +1x", desc: "Gain +1x multiplier", baseCost: 25, multiplierBoost: 1, icon: "📈", category: "MULTIPLIERS" },
+            { id: 3, name: "Multiplier +2x", desc: "Gain +2x multiplier", baseCost: 50, multiplierBoost: 2, icon: "📈", category: "MULTIPLIERS" },
+            { id: 4, name: "Multiplier +5x", desc: "Gain +5x multiplier", baseCost: 100, multiplierBoost: 5, icon: "🚀", category: "MULTIPLIERS" },
+            { id: 5, name: "Double Rebirth Gains", desc: "2x multiplier gain", baseCost: 100, rebirthMultiplierX: 2, icon: "2️⃣", category: "REBIRTH MULT" },
+            { id: 6, name: "Triple Rebirth Gains", desc: "3x multiplier gain", baseCost: 200, rebirthMultiplierX: 3, icon: "3️⃣", category: "REBIRTH MULT" },
+            { id: 7, name: "Starting Water 1M", desc: "Start with 1M water", baseCost: 30, startingWater: 1000000, icon: "💛", category: "STARTING" },
+            { id: 8, name: "Starting Water 100M", desc: "Start with 100M water", baseCost: 120, startingWater: 100000000, icon: "💛", category: "STARTING" },
+            { id: 9, name: "Starting Click +1K", desc: "Start with +1K click", baseCost: 15, startingClickBonus: 1000, icon: "👆", category: "STARTING" },
+            { id: 10, name: "Auto Clicker Tier 1", desc: "+1 click per second", baseCost: 50, autoClicksPerSecond: 1, icon: "🤖", category: "AUTO CLICKER" },
+            { id: 11, name: "Auto Clicker Tier 2", desc: "+5 clicks per second", baseCost: 150, autoClicksPerSecond: 5, icon: "🤖", category: "AUTO CLICKER" },
+            { id: 12, name: "Double Auto Clicks", desc: "2x auto clicker power", baseCost: 200, autoClickMultiplier: 2, icon: "2️⃣", category: "AUTO ENHANCE" },
+            { id: 13, name: "Water Retention 10%", desc: "Keep 10% on rebirth", baseCost: 75, waterRetention: 0.1, icon: "💰", category: "SPECIAL" },
+            { id: 14, name: "Click Power +50%", desc: "+50% all click bonuses", baseCost: 300, clickBonusMultiplier: 1.5, icon: "🔥", category: "PRODUCTION" },
+            { id: 15, name: "Production +25%", desc: "+25% all WPS bonuses", baseCost: 280, wpsBonusMultiplier: 1.25, icon: "🌊", category: "PRODUCTION" },
+        ];
+
+        // ======== UTILITIES ========
+        function formatNumber(num) {
+            if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
+            if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
+            if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
+            return Math.floor(num).toString();
+        }
+
+        function formatShortNumber(num) {
+            if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
+            if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
+            if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
+            return num.toFixed(0);
+        }
+
+        function calculateUpgradeCost(upgrade) {
+            const count = gameState.upgradeCounts[upgrade.id] || 0;
+            return Math.ceil(upgrade.baseCost * Math.pow(1.15, count));
+        }
+
+        function calculateRebirthCost(item) {
+            const count = gameState.rebirthUpgrades[item.id] || 0;
+            return Math.ceil(item.baseCost * Math.pow(1.2, count));
+        }
+
+        function calculateRebirthTotalCost() {
+            const baseCost = 1000000000;
+            const multiplier = Math.pow(10, gameState.totalRebirths);
+            let cost = baseCost * multiplier;
+            
+            if (gameState.rebirthUpgrades[5]) {
+                cost *= Math.pow(0.75, gameState.rebirthUpgrades[5]);
+            }
+            
+            return Math.ceil(cost);
+        }
+
+        function calculateClickPower() {
+            let clickPower = 1;
+            upgrades.forEach(upgrade => {
+                if (upgrade.clickBonus) {
+                    clickPower += upgrade.clickBonus * (gameState.upgradeCounts[upgrade.id] || 0);
+                }
+            });
+            return clickPower;
+        }
+
+        function calculateWPS() {
+            let wps = 0;
+            upgrades.forEach(upgrade => {
+                if (upgrade.wpsBonus) {
+                    wps += upgrade.wpsBonus * (gameState.upgradeCounts[upgrade.id] || 0);
+                }
+            });
+            return wps;
+        }
+
+        // ======== UI UPDATES ========
+        function updateDisplay() {
+            const wps = gameState.waterPerSecond * gameState.globalMultiplier;
+            const clickPower = calculateClickPower();
+            const totalOwned = Object.values(gameState.upgradeCounts).reduce((a, b) => a + b, 0);
+
+            document.getElementById('waterDisplay').textContent = formatNumber(gameState.water);
+            document.getElementById('wpsDisplay').textContent = formatNumber(wps);
+            document.getElementById('multiplierDisplay').textContent = gameState.globalMultiplier.toFixed(2) + 'x';
+            document.getElementById('rebirthCountDisplay').textContent = gameState.totalRebirths;
+            document.getElementById('clickValue').textContent = formatShortNumber(clickPower);
+            document.getElementById('totalOwnedDisplay').textContent = totalOwned;
+            document.getElementById('rebirthPointsDisplay').textContent = gameState.rebirthPoints;
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        function showNotification(message) {
+            const notif = document.createElement('div');
+            notif.className = 'notification';
+            notif.textContent = message;
+            document.body.appendChild(notif);
+            setTimeout(() => notif.remove(), 3500);
+        }
+
+        function showSaveIndicator(text) {
+            const indicator = document.getElementById('saveIndicator');
+            const saveText = document.getElementById('saveText');
+            
+            if (text === 'SAVING...') {
+                indicator.classList.add('saving');
+                indicator.classList.remove('saved');
+                saveText.textContent = 'SAVING...';
+            } else if (text === 'SAVED') {
+                indicator.classList.remove('saving');
+                indicator.classList.add('saved');
+                saveText.textContent = 'SAVED';
+                setTimeout(() => {
+                    indicator.classList.remove('saved');
+                }, 2000);
+            }
+        }
+
+        function closeInfoBubble() {
+            const bubble = document.getElementById('infoBubble');
+            bubble.style.display = 'none';
+        }
+
+        // ======== SAVE SYSTEM ========
+        const SAVE_KEY = 'waterClickerGameState';
+
+        function saveGame() {
+            try {
+                localStorage.setItem(SAVE_KEY, JSON.stringify(gameState));
+                showSaveIndicator('SAVED');
+            } catch (error) {
+                console.error('Save failed:', error);
+            }
+        }
+
+        function loadGame() {
+            try {
+                const data = localStorage.getItem(SAVE_KEY);
+                if (data) {
+                    Object.assign(gameState, JSON.parse(data));
+                    showNotification('[ PROGRESS LOADED ]');
+                }
+            } catch (error) {
+                console.error('Load failed:', error);
+            }
+        }
+
+        setInterval(() => {
+            showSaveIndicator('SAVING...');
+            saveGame();
+        }, 5000);
+
+        // ======== KEYBOARD ========
+        let passwordBuffer = '';
         const adminPassword = 'KevinC';
 
-        document.getElementById('comingSoonBtn').addEventListener('click', () => {
-            openModal('comingSoonModal');
-            setTimeout(() => {
-                const input = document.getElementById('comingSoonInput');
-                input.focus();
-                input.value = '';
-                comingSoonBuffer = '';
-            }, 100);
-        });
-
-        document.getElementById('comingSoonInput').addEventListener('input', (e) => {
-            const value = e.target.value;
-            comingSoonBuffer = value.toLowerCase();
-
-            if (comingSoonBuffer.includes('kevinc')) {
-                closeModal('comingSoonModal');
-                openAdminPanel();
-                showNotification('[ ADMIN PROTOCOL ACTIVATED ]');
-                e.target.value = '';
-                comingSoonBuffer = '';
-            }
-        });
-
-        // ======== ADMIN PASSWORD DETECTION ========
-        let passwordBuffer = '';
-
         document.addEventListener('keydown', (e) => {
-            // Check for spacebar
             if (e.code === 'Space') {
                 e.preventDefault();
-                const clickArea = document.getElementById('clickArea');
-                clickArea.click();
+                document.getElementById('clickArea').click();
                 return;
             }
 
-            // Build password buffer for global detection (outside modal)
-            const modal = document.querySelector('.modal[style*="display: block"]');
-            if (!modal) {
-                passwordBuffer += e.key;
-                
-                if (passwordBuffer.length > adminPassword.length) {
-                    passwordBuffer = passwordBuffer.slice(-adminPassword.length);
-                }
+            passwordBuffer += e.key;
+            if (passwordBuffer.length > adminPassword.length) {
+                passwordBuffer = passwordBuffer.slice(-adminPassword.length);
+            }
 
-                if (passwordBuffer === adminPassword) {
-                    openAdminPanel();
-                    passwordBuffer = '';
-                }
+            if (passwordBuffer === adminPassword) {
+                openAdminPanel();
+                passwordBuffer = '';
             }
         });
 
+        // ======== ADMIN PANEL ========
         function openAdminPanel() {
             document.getElementById('adminPanel').classList.add('active');
             document.getElementById('adminOverlay').classList.add('active');
@@ -1743,77 +1775,54 @@
             document.getElementById('adminOverlay').classList.remove('active');
         }
 
-        document.getElementById('adminOverlay').addEventListener('click', closeAdminPanel);
-
-        // ======== ADMIN FUNCTIONS ========
         function adminSetWater() {
             const value = parseFloat(document.getElementById('adminWater').value);
-            if (isNaN(value) || value < 0) return;
-            gameState.water = value;
-            updateDisplay();
-            showNotification(`[ WATER SET TO ${formatNumber(value)} ]`);
-            document.getElementById('adminWater').value = '';
+            if (!isNaN(value) && value >= 0) {
+                gameState.water = value;
+                updateDisplay();
+                showNotification(`[ WATER SET TO ${formatNumber(value)} ]`);
+                document.getElementById('adminWater').value = '';
+            }
         }
 
         function adminAddWater() {
             const value = parseFloat(document.getElementById('adminAddWater').value);
-            if (isNaN(value) || value < 0) return;
-            gameState.water += value;
-            updateDisplay();
-            showNotification(`[ ADDED ${formatNumber(value)} WATER ]`);
-            document.getElementById('adminAddWater').value = '';
+            if (!isNaN(value) && value >= 0) {
+                gameState.water += value;
+                updateDisplay();
+                showNotification(`[ ADDED ${formatNumber(value)} WATER ]`);
+                document.getElementById('adminAddWater').value = '';
+            }
         }
 
         function adminSetRebirths() {
             const value = parseInt(document.getElementById('adminRebirths').value);
-            if (isNaN(value) || value < 0) return;
-            gameState.totalRebirths = value;
-            updateDisplay();
-            showNotification(`[ REBIRTHS SET TO ${value} ]`);
-            document.getElementById('adminRebirths').value = '';
+            if (!isNaN(value) && value >= 0) {
+                gameState.totalRebirths = value;
+                updateDisplay();
+                showNotification(`[ REBIRTHS SET TO ${value} ]`);
+                document.getElementById('adminRebirths').value = '';
+            }
         }
 
         function adminSetRP() {
             const value = parseInt(document.getElementById('adminRP').value);
-            if (isNaN(value) || value < 0) return;
-            gameState.rebirthPoints = value;
-            updateDisplay();
-            showNotification(`[ RP SET TO ${value} ]`);
-            document.getElementById('adminRP').value = '';
+            if (!isNaN(value) && value >= 0) {
+                gameState.rebirthPoints = value;
+                updateDisplay();
+                showNotification(`[ RP SET TO ${value} ]`);
+                document.getElementById('adminRP').value = '';
+            }
         }
 
         function adminSetMultiplier() {
             const value = parseFloat(document.getElementById('adminMultiplier').value);
-            if (isNaN(value) || value < 0) return;
-            gameState.globalMultiplier = value;
-            updateDisplay();
-            showNotification(`[ MULTIPLIER SET TO ${value.toFixed(2)}x ]`);
-            document.getElementById('adminMultiplier').value = '';
-        }
-
-        function adminSetUpgrade() {
-            const upgradeId = parseInt(document.getElementById('adminUpgradeId').value);
-            const qty = parseInt(document.getElementById('adminUpgradeQty').value);
-            if (isNaN(upgradeId) || isNaN(qty) || upgradeId < 1 || upgradeId > upgrades.length) return;
-            gameState.upgradeCounts[upgradeId] = qty;
-            updateDisplay();
-            showNotification(`[ UPGRADE ${upgradeId} SET TO ${qty} ]`);
-            document.getElementById('adminUpgradeId').value = '';
-            document.getElementById('adminUpgradeQty').value = '';
-        }
-
-        function adminBuyAllUpgrades() {
-            upgrades.forEach(u => {
-                gameState.upgradeCounts[u.id] = 10;
-            });
-            updateDisplay();
-            showNotification('[ ALL UPGRADES SET TO 10 ]');
-        }
-
-        function adminResetUpgrades() {
-            gameState.upgradeCounts = {};
-            updateDisplay();
-            showNotification('[ UPGRADES RESET ]');
+            if (!isNaN(value) && value >= 0) {
+                gameState.globalMultiplier = value;
+                updateDisplay();
+                showNotification(`[ MULTIPLIER SET TO ${value.toFixed(2)}x ]`);
+                document.getElementById('adminMultiplier').value = '';
+            }
         }
 
         function adminMaxWater() {
@@ -1855,250 +1864,93 @@
             }
         }
 
-        // ======== SAVE SYSTEM ========
-        const SAVE_KEY = 'waterClickerGameState';
-        const SAVE_INTERVAL = 5000;
+        document.getElementById('adminOverlay').addEventListener('click', closeAdminPanel);
 
-        function saveGame() {
-            try {
-                const saveData = JSON.stringify(gameState);
-                localStorage.setItem(SAVE_KEY, saveData);
-                showSaveIndicator('SAVED');
-            } catch (error) {
-                console.error('Save failed:', error);
-                showSaveIndicator('SAVE FAILED');
-            }
-        }
-
-        function loadGame() {
-            try {
-                const saveData = localStorage.getItem(SAVE_KEY);
-                if (saveData) {
-                    const loaded = JSON.parse(saveData);
-                    Object.assign(gameState, loaded);
-                    showNotification('[ PROGRESS LOADED! ]');
-                    return true;
-                }
-            } catch (error) {
-                console.error('Load failed:', error);
-            }
-            return false;
-        }
-
-        function showSaveIndicator(text) {
-            const indicator = document.getElementById('saveIndicator');
-            const saveText = document.getElementById('saveText');
-            
-            if (text === 'SAVING...') {
-                indicator.classList.add('saving');
-                indicator.classList.remove('saved');
-                saveText.textContent = 'SAVING...';
-            } else if (text === 'SAVED') {
-                indicator.classList.remove('saving');
-                indicator.classList.add('saved');
-                saveText.textContent = 'SAVED';
-                setTimeout(() => {
-                    indicator.classList.remove('saved');
-                }, 2000);
-            }
-        }
-
-        setInterval(() => {
-            showSaveIndicator('SAVING...');
-            saveGame();
-        }, SAVE_INTERVAL);
-
-        function closeInfoBubble() {
-            const bubble = document.getElementById('infoBubble');
-            bubble.style.animation = 'slideDown 0.4s ease-out reverse';
+        // ======== COMING SOON ========
+        document.getElementById('comingSoonBtn').addEventListener('click', () => {
+            openModal('comingSoonModal');
             setTimeout(() => {
-                bubble.style.display = 'none';
-            }, 400);
-        }
+                document.getElementById('comingSoonInput').focus();
+            }, 100);
+        });
 
-        // Game State
-        const gameState = {
-            water: 0,
-            waterPerSecond: 0,
-            globalMultiplier: 1,
-            totalRebirths: 0,
-            totalClicks: 0,
-            rebirthPoints: 0,
-            upgradeCounts: {},
-            rebirthUpgrades: {},
-            isRaining: false,
-            isRainingDrizzle: false,
-            isThunderStorm: false,
-            rainMultiplier: 1
-        };
+        document.getElementById('comingSoonInput').addEventListener('input', (e) => {
+            if (e.target.value.toLowerCase().includes('kevinc')) {
+                closeModal('comingSoonModal');
+                openAdminPanel();
+                showNotification('[ ADMIN PROTOCOL ACTIVATED ]');
+                e.target.value = '';
+            }
+        });
 
-        // ======== 129 UPGRADES ========
-        const upgrades = (() => {
-            const wpsUpgrades = [
-                { name: "Water Bucket", wpsBonus: 0.75, baseCost: 10, icon: "🪣" },
-                { name: "Small Pump", wpsBonus: 3.75, baseCost: 50, icon: "🚰" },
-                { name: "Medium Pump", wpsBonus: 15, baseCost: 200, icon: "🚰" },
-                { name: "Large Pump", wpsBonus: 37.5, baseCost: 800, icon: "🚰" },
-                { name: "Automatic System", wpsBonus: 112.5, baseCost: 3000, icon: "⚙️" },
-                { name: "Water Tower", wpsBonus: 375, baseCost: 10000, icon: "🏗️" },
-                { name: "Hydroelectric Plant", wpsBonus: 1125, baseCost: 50000, icon: "⚡" },
-                { name: "Aquifer Access", wpsBonus: 3750, baseCost: 200000, icon: "🌊" },
-                { name: "Cloud Harvesting", wpsBonus: 11250, baseCost: 1000000, icon: "☁️" },
-                { name: "Ocean Control", wpsBonus: 37500, baseCost: 5000000, icon: "🌊" },
-                { name: "Atmospheric Condenser", wpsBonus: 112500, baseCost: 25000000, icon: "🌫️" },
-                { name: "Antarctic Ice Melter", wpsBonus: 375000, baseCost: 100000000, icon: "🧊" },
-                { name: "Planetary Irrigation", wpsBonus: 1125000, baseCost: 500000000, icon: "🪐" },
-                { name: "Comet Mining Operation", wpsBonus: 3750000, baseCost: 2000000000, icon: "☄️" },
-                { name: "Black Hole Extraction", wpsBonus: 11250000, baseCost: 10000000000, icon: "🕳️" },
-                { name: "Mega Spring", wpsBonus: 37500000, baseCost: 50000000000, icon: "⛲" },
-                { name: "Cosmic Ocean", wpsBonus: 112500000, baseCost: 250000000000, icon: "🌌" },
-                { name: "Universal Flood", wpsBonus: 375000000, baseCost: 1000000000000, icon: "🌊" },
-                { name: "Galaxy Waterways", wpsBonus: 1125000000, baseCost: 5000000000000, icon: "🌠" },
-                { name: "Interdimensional Pump", wpsBonus: 3750000000, baseCost: 25000000000000, icon: "🌀" },
-                { name: "Void Water Source", wpsBonus: 11250000000, baseCost: 100000000000000, icon: "⚫" },
-                { name: "Infinite Aquifer", wpsBonus: 37500000000, baseCost: 500000000000000, icon: "♾️" },
-                { name: "Universal Converter", wpsBonus: 112500000000, baseCost: 2500000000000000, icon: "🔄" },
-                { name: "Quantum Water Layer", wpsBonus: 375000000000, baseCost: 1e16, icon: "⚛️" },
-                { name: "Multiversal Pipeline", wpsBonus: 1125000000000, baseCost: 5e16, icon: "🌌" },
-                { name: "Temporal Water Flow", wpsBonus: 3750000000000, baseCost: 2.5e17, icon: "⏳" },
-                { name: "Dimensional Rift Pump", wpsBonus: 11250000000000, baseCost: 1e18, icon: "🌀" },
-                { name: "Cosmic Entity Channel", wpsBonus: 37500000000000, baseCost: 5e18, icon: "👁️" },
-                { name: "Reality-Bending Flow", wpsBonus: 112500000000000, baseCost: 2.5e19, icon: "🌈" },
-                { name: "Absolute Water Essence", wpsBonus: 375000000000000, baseCost: 1e20, icon: "✨" },
-                { name: "Celestial Nexus", wpsBonus: 1.125e15, baseCost: 5e20, icon: "💎" },
-                { name: "Omnipotent Source", wpsBonus: 3.75e15, baseCost: 2.5e21, icon: "👑" },
-                { name: "Transcendental Flow", wpsBonus: 1.125e16, baseCost: 1e22, icon: "🔮" },
-                { name: "Infinite Cascade", wpsBonus: 3.75e16, baseCost: 5e22, icon: "💧" },
-                { name: "Universal Conduit", wpsBonus: 1.125e17, baseCost: 2.5e23, icon: "🌊" },
-                { name: "Eternity Well", wpsBonus: 3.75e17, baseCost: 1e24, icon: "⏰" },
-                { name: "Void Torrents", wpsBonus: 1.125e18, baseCost: 5e24, icon: "⚫" },
-                { name: "Cosmic Deluge", wpsBonus: 3.75e18, baseCost: 2.5e25, icon: "🌠" },
-                { name: "Apocalypse Tide", wpsBonus: 1.125e19, baseCost: 1e26, icon: "🌊" },
-                { name: "Omega Flow", wpsBonus: 3.75e19, baseCost: 5e26, icon: "♾️" },
-                { name: "Supreme Wellspring", wpsBonus: 1.125e20, baseCost: 2.5e27, icon: "👑" },
-                { name: "Boundless Depths", wpsBonus: 3.75e20, baseCost: 1e28, icon: "🔵" },
-                { name: "Infinite Ocean", wpsBonus: 1.125e21, baseCost: 5e28, icon: "🌊" },
-                { name: "Reality Stream", wpsBonus: 3.75e21, baseCost: 2.5e29, icon: "🌀" },
-                { name: "Decillion Spring", wpsBonus: 1.125e22, baseCost: 1e30, icon: "⛲" },
-            ];
+        // ======== CLICK AREA ========
+        document.getElementById('clickArea').addEventListener('click', function(e) {
+            const clickPower = calculateClickPower();
+            gameState.water += clickPower * gameState.globalMultiplier;
+            gameState.totalClicks += 1;
+            updateDisplay();
+            
+            const effect = document.createElement('div');
+            effect.textContent = `+${formatShortNumber(clickPower * gameState.globalMultiplier)}`;
+            effect.style.position = 'fixed';
+            effect.style.left = e.clientX + 'px';
+            effect.style.top = e.clientY + 'px';
+            effect.style.color = '#00ffff';
+            effect.style.fontWeight = 'bold';
+            effect.style.fontSize = '24px';
+            effect.style.pointerEvents = 'none';
+            effect.style.textShadow = '0 0 15px rgba(0, 212, 255, 0.8)';
+            effect.style.fontFamily = "'Courier New', monospace";
+            effect.style.zIndex = '600';
+            effect.style.animation = 'floatUp 1s ease-out forwards';
+            document.body.appendChild(effect);
+            setTimeout(() => effect.remove(), 1000);
+        });
 
-            const clickUpgrades = [
-                { name: "Water Bucket II", clickBonus: 3, baseCost: 100, icon: "🪣" },
-                { name: "Enhanced Click", clickBonus: 15, baseCost: 500, icon: "👆" },
-                { name: "Power Click", clickBonus: 75, baseCost: 3000, icon: "✨" },
-                { name: "Super Click", clickBonus: 400, baseCost: 15000, icon: "⚡" },
-                { name: "Mega Click", clickBonus: 2000, baseCost: 100000, icon: "💥" },
-                { name: "Giga Click", clickBonus: 10000, baseCost: 1000000, icon: "🌟" },
-                { name: "Tera Click", clickBonus: 60000, baseCost: 10000000, icon: "⭐" },
-                { name: "Peta Click", clickBonus: 350000, baseCost: 100000000, icon: "💫" },
-                { name: "Exa Click", clickBonus: 2000000, baseCost: 1000000000, icon: "🔆" },
-                { name: "Zetta Click", clickBonus: 12000000, baseCost: 10000000000, icon: "🌠" },
-                { name: "Yotta Click", clickBonus: 75000000, baseCost: 100000000000, icon: "💎" },
-                { name: "Ultra Click", clickBonus: 450000000, baseCost: 1000000000000, icon: "🔴" },
-                { name: "Mythic Click", clickBonus: 2.7e9, baseCost: 1e13, icon: "👑" },
-                { name: "Godly Click", clickBonus: 1.62e10, baseCost: 1e14, icon: "⚡" },
-                { name: "Dimensional Click", clickBonus: 9.72e10, baseCost: 1e15, icon: "🌀" },
-                { name: "Celestial Touch", clickBonus: 5.83e11, baseCost: 1e16, icon: "✨" },
-                { name: "Omnipotent Strike", clickBonus: 3.5e12, baseCost: 1e17, icon: "💥" },
-                { name: "Reality Breaker", clickBonus: 2.1e13, baseCost: 1e18, icon: "🔮" },
-                { name: "Infinity Tap", clickBonus: 1.26e14, baseCost: 1e19, icon: "♾️" },
-                { name: "Decillion Touch", clickBonus: 7.56e14, baseCost: 1e20, icon: "💧" },
-                { name: "Supreme Click", clickBonus: 4.536e15, baseCost: 1e21, icon: "👑" },
-                { name: "Transcendent Tap", clickBonus: 2.7216e16, baseCost: 1e22, icon: "✨" },
-                { name: "Omniversal Click", clickBonus: 1.63296e17, baseCost: 1e23, icon: "🌌" },
-                { name: "Absolute Touch", clickBonus: 9.79776e17, baseCost: 1e24, icon: "💎" },
-                { name: "Eternal Striker", clickBonus: 5.878656e18, baseCost: 1e25, icon: "⏰" },
-                { name: "Cosmic Tap", clickBonus: 3.5271936e19, baseCost: 1e26, icon: "🌠" },
-                { name: "Void Striker", clickBonus: 2.11631616e20, baseCost: 1e27, icon: "⚫" },
-                { name: "Apocalypse Tap", clickBonus: 1.269789696e21, baseCost: 1e28, icon: "💥" },
-                { name: "Omega Strike", clickBonus: 7.6187381760e21, baseCost: 1e29, icon: "♾️" },
-                { name: "Ultimate Click", clickBonus: 4.57124290560e22, baseCost: 1e30, icon: "👑" },
-                { name: "Quantum Tap", clickBonus: 2.742745743360e23, baseCost: 1e31, icon: "⚛️" },
-                { name: "Infinity Strike", clickBonus: 1.6456474460160e24, baseCost: 1e32, icon: "♾️" },
-                { name: "Decillion Tap", clickBonus: 9.87388467609600e24, baseCost: 1e33, icon: "💧" },
-                { name: "Supremacy Click", clickBonus: 5.92633080565760e25, baseCost: 1e34, icon: "👑" },
-                { name: "Transcendence Touch", clickBonus: 3.555798483394560e26, baseCost: 1e35, icon: "🔮" },
-                { name: "Reality Tap", clickBonus: 2.1334790900367360e27, baseCost: 1e36, icon: "🌈" },
-                { name: "Void Click", clickBonus: 1.28008745402204160e28, baseCost: 1e37, icon: "⚫" },
-                { name: "Cosmic Breaker", clickBonus: 7.68052472413224960e28, baseCost: 1e38, icon: "💫" },
-                { name: "Eternal Click", clickBonus: 4.608314834479349760e29, baseCost: 1e39, icon: "⏰" },
-                { name: "Absolute Tap", clickBonus: 2.7649889006876098560e30, baseCost: 1e40, icon: "✨" },
-            ];
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes floatUp {
+                0% { transform: translateY(0) scale(1); opacity: 1; }
+                100% { transform: translateY(-120px) scale(0.8); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
 
-            const allUpgrades = [...wpsUpgrades, ...clickUpgrades];
-            return allUpgrades.map((u, idx) => ({
-                ...u,
-                id: idx + 1,
-                desc: u.wpsBonus ? `Increases water per second by ${formatShortNumber(u.wpsBonus)}` : `Click power +${formatShortNumber(u.clickBonus)}`,
-            }));
-        })();
+        // ======== UPGRADES BUTTON ========
+        document.getElementById('upgradesBtn').addEventListener('click', () => {
+            const grid = document.getElementById('upgradesGrid');
+            grid.innerHTML = '';
+            upgrades.forEach(upgrade => {
+                const count = gameState.upgradeCounts[upgrade.id] || 0;
+                const cost = calculateUpgradeCost(upgrade);
+                const canAfford = gameState.water >= cost;
+                const item = document.createElement('div');
+                item.className = 'upgrade-item' + (!canAfford ? ' locked' : '');
+                item.innerHTML = `
+                    <div class="upgrade-name">${upgrade.icon} ${upgrade.name}</div>
+                    <div class="upgrade-desc">${upgrade.desc}</div>
+                    <div class="upgrade-cost">◆ ${formatNumber(cost)}</div>
+                    <div class="upgrade-count">OWN: ${count}</div>
+                    <div class="upgrade-status">${canAfford ? '[ AVAILABLE ]' : '[ NEED ' + formatNumber(cost - gameState.water) + ' ]'}</div>
+                `;
+                item.onclick = () => {
+                    if (gameState.water >= cost) {
+                        gameState.water -= cost;
+                        gameState.upgradeCounts[upgrade.id] = (gameState.upgradeCounts[upgrade.id] || 0) + 1;
+                        gameState.waterPerSecond = calculateWPS();
+                        updateDisplay();
+                        showNotification(`[ ACQUIRED: ${upgrade.name} ]`);
+                        document.getElementById('upgradesBtn').click();
+                    } else {
+                        showNotification(`[ NEED ${formatNumber(cost - gameState.water)} MORE ]`);
+                    }
+                };
+                grid.appendChild(item);
+            });
+            openModal('upgradesModal');
+        });
 
-        // Updated rebirth shop items with better descriptions
-        const rebirthShopItems = [
-            // ========== MULTIPLIER UPGRADES ==========
-            { id: 1, name: "Multiplier +0.5x", desc: "Gain +0.5x multiplier", baseCost: 10, multiplierBoost: 0.5, icon: "📈", category: "MULTIPLIERS" },
-            { id: 2, name: "Multiplier +1x", desc: "Gain +1x multiplier", baseCost: 25, multiplierBoost: 1, icon: "📈", category: "MULTIPLIERS" },
-            { id: 3, name: "Multiplier +2x", desc: "Gain +2x multiplier", baseCost: 50, multiplierBoost: 2, icon: "📈", category: "MULTIPLIERS" },
-            { id: 4, name: "Multiplier +5x", desc: "Gain +5x multiplier", baseCost: 100, multiplierBoost: 5, icon: "🚀", category: "MULTIPLIERS" },
-
-            // ========== REBIRTH MULTIPLIER UPGRADES ==========
-            { id: 7, name: "Double Rebirth Gains", desc: "2x multiplier gain from rebirths", baseCost: 100, rebirthMultiplierX: 2, icon: "2️⃣", category: "REBIRTH MULTIPLIERS" },
-            { id: 8, name: "Triple Rebirth Gains", desc: "3x multiplier gain from rebirths", baseCost: 200, rebirthMultiplierX: 3, icon: "3️⃣", category: "REBIRTH MULTIPLIERS" },
-            { id: 20, name: "Extra RP Points x2", desc: "Gain 2x more rebirth points per rebirth", baseCost: 80, extraRebirthPointsX: 2, icon: "⭐", category: "REBIRTH MULTIPLIERS" },
-            { id: 21, name: "Extra RP Points x3", desc: "Gain 3x more rebirth points per rebirth", baseCost: 160, extraRebirthPointsX: 3, icon: "⭐", category: "REBIRTH MULTIPLIERS" },
-            { id: 22, name: "Extra RP Points x5", desc: "Gain 5x more rebirth points per rebirth", baseCost: 320, extraRebirthPointsX: 5, icon: "⭐", category: "REBIRTH MULTIPLIERS" },
-            { id: 25, name: "Speed Runner", desc: "Rebirths cost 25% less", baseCost: 250, rebirthCostReduction: 0.75, icon: "⚡", category: "REBIRTH MULTIPLIERS" },
-
-            // ========== AUTO CLICKER UPGRADES ==========
-            { id: 31, name: "Auto Clicker Tier 1", desc: "+1 click per second", baseCost: 50, autoClicksPerSecond: 1, icon: "🤖", category: "AUTO CLICKER" },
-            { id: 32, name: "Auto Clicker Tier 2", desc: "+5 clicks per second", baseCost: 150, autoClicksPerSecond: 5, icon: "🤖", category: "AUTO CLICKER" },
-            { id: 33, name: "Auto Clicker Tier 3", desc: "+20 clicks per second", baseCost: 400, autoClicksPerSecond: 20, icon: "🤖", category: "AUTO CLICKER" },
-            { id: 34, name: "Auto Clicker Tier 4", desc: "+100 clicks per second", baseCost: 1000, autoClicksPerSecond: 100, icon: "🤖", category: "AUTO CLICKER" },
-
-            // ========== AUTO CLICKER ENHANCEMENTS ==========
-            { id: 35, name: "Double Auto Clicks", desc: "2x effectiveness of auto clicker", baseCost: 200, autoClickMultiplier: 2, icon: "2️⃣", category: "AUTO CLICKER ENHANCEMENTS" },
-            { id: 36, name: "Triple Auto Clicks", desc: "3x effectiveness of auto clicker", baseCost: 500, autoClickMultiplier: 3, icon: "3️⃣", category: "AUTO CLICKER ENHANCEMENTS" },
-            { id: 37, name: "5x Auto Clicker", desc: "5x effectiveness of auto clicker", baseCost: 1200, autoClickMultiplier: 5, icon: "5️⃣", category: "AUTO CLICKER ENHANCEMENTS" },
-
-            // ========== STARTING ITEMS ==========
-            { id: 5, name: "Starting Click +1K", desc: "Start with +1000 click power", baseCost: 15, startingClickBonus: 1000, icon: "👆", category: "STARTING ITEMS" },
-            { id: 6, name: "Starting WPS +100", desc: "Start with +100 water per second", baseCost: 20, startingWpsBonus: 100, icon: "💧", category: "STARTING ITEMS" },
-            { id: 15, name: "Starting Water 1M", desc: "Start with 1,000,000 water", baseCost: 30, startingWater: 1000000, icon: "💛", category: "STARTING ITEMS" },
-            { id: 16, name: "Starting Water 10M", desc: "Start with 10,000,000 water", baseCost: 60, startingWater: 10000000, icon: "💛", category: "STARTING ITEMS" },
-            { id: 17, name: "Starting Water 100M", desc: "Start with 100,000,000 water", baseCost: 120, startingWater: 100000000, icon: "💛", category: "STARTING ITEMS" },
-            { id: 18, name: "Starting Water 1B", desc: "Start with 1,000,000,000 water", baseCost: 250, startingWater: 1000000000, icon: "💛", category: "STARTING ITEMS" },
-
-            // ========== PRODUCTION UPGRADES ==========
-            { id: 26, name: "Click Power Boost", desc: "+50% to all click bonuses", baseCost: 300, clickBonusMultiplier: 1.5, icon: "🔥", category: "PRODUCTION UPGRADES" },
-            { id: 27, name: "Production Overflow", desc: "+25% to all WPS bonuses", baseCost: 280, wpsBonusMultiplier: 1.25, icon: "🌊", category: "PRODUCTION UPGRADES" },
-
-            // ========== PASSIVE INCOME ==========
-            { id: 13, name: "Passive RP +1/sec", desc: "Gain 1 rebirth point per second", baseCost: 150, passiveRebirthPoints: 1, icon: "✨", category: "PASSIVE INCOME" },
-            { id: 14, name: "Passive RP +3/sec", desc: "Gain 3 rebirth points per second", baseCost: 300, passiveRebirthPoints: 3, icon: "✨", category: "PASSIVE INCOME" },
-
-            // ========== SPECIAL UPGRADES ==========
-            { id: 9, name: "Water Retention 10%", desc: "Keep 10% of water on rebirth", baseCost: 75, waterRetention: 0.1, icon: "💰", category: "SPECIAL" },
-            { id: 10, name: "Water Retention 25%", desc: "Keep 25% of water on rebirth", baseCost: 150, waterRetention: 0.25, icon: "💰", category: "SPECIAL" },
-            { id: 11, name: "Water Retention 50%", desc: "Keep 50% of water on rebirth", baseCost: 300, waterRetention: 0.5, icon: "💰", category: "SPECIAL" },
-            { id: 28, name: "Quantum Rebirth", desc: "Bonus 2x mult every 5 rebirths", baseCost: 400, quantumBonus: true, icon: "⚛️", category: "SPECIAL" },
-            { id: 29, name: "Lucky Strike", desc: "Lucky drops give 10x reward", baseCost: 150, goldenRewardX: 10, icon: "🍀", category: "SPECIAL" },
-            { id: 30, name: "Mythic Prestige", desc: "Unlock ultimate prestige rewards", baseCost: 500, mythicPrestige: true, icon: "👑", category: "SPECIAL" },
-        ];
-
-        function formatShortNumber(num) {
-            if (num >= 1e30) return (num / 1e30).toFixed(0) + 'Dc';
-            if (num >= 1e27) return (num / 1e27).toFixed(0) + 'Sp';
-            if (num >= 1e24) return (num / 1e24).toFixed(0) + 'Sq';
-            if (num >= 1e21) return (num / 1e21).toFixed(0) + 'Sx';
-            if (num >= 1e18) return (num / 1e18).toFixed(0) + 'Qi';
-            if (num >= 1e15) return (num / 1e15).toFixed(2) + 'Qa';
-            if (num >= 1e12) return (num / 1e12).toFixed(2) + 'T';
-            if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
-            if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
-            if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
-            return num.toFixed(0);
-        }
-
+        // ======== REBIRTH SHOP BUTTON ========
         function getRebirthShopsByCategory() {
             const categories = {};
             rebirthShopItems.forEach(item => {
@@ -2110,227 +1962,12 @@
             return categories;
         }
 
-        function calculateUpgradeCost(upgrade) {
-            const count = gameState.upgradeCounts[upgrade.id] || 0;
-            return Math.ceil(upgrade.baseCost * Math.pow(1.15, count));
-        }
-
-        function calculateRebirthCost(item) {
-            const count = gameState.rebirthUpgrades[item.id] || 0;
-            return Math.ceil(item.baseCost * Math.pow(1.2, count));
-        }
-
-        function calculateRebirthTotalCost() {
-            const baseCost = 1000000000;
-            const multiplier = Math.pow(10, gameState.totalRebirths);
-            let cost = baseCost * multiplier;
-            
-            if (gameState.rebirthUpgrades[25]) {
-                cost *= Math.pow(0.75, gameState.rebirthUpgrades[25]);
-            }
-            
-            return Math.ceil(cost);
-        }
-
-        function formatNumber(num) {
-            if (num >= 1e33) return (num / 1e33).toFixed(2) + 'Dc';
-            if (num >= 1e30) return (num / 1e30).toFixed(2) + 'No';
-            if (num >= 1e27) return (num / 1e27).toFixed(2) + 'Oc';
-            if (num >= 1e24) return (num / 1e24).toFixed(2) + 'Sp';
-            if (num >= 1e21) return (num / 1e21).toFixed(2) + 'Sx';
-            if (num >= 1e18) return (num / 1e18).toFixed(2) + 'Qi';
-            if (num >= 1e15) return (num / 1e15).toFixed(2) + 'Qa';
-            if (num >= 1e12) return (num / 1e12).toFixed(2) + 'T';
-            if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
-            if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
-            if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
-            return Math.floor(num).toString();
-        }
-
-        function updateDisplay() {
-            const water = Math.floor(gameState.water);
-            const wps = (gameState.waterPerSecond * gameState.globalMultiplier * gameState.rainMultiplier);
-            const clickPower = calculateClickPower();
-            const totalOwned = Object.values(gameState.upgradeCounts).reduce((a, b) => a + b, 0);
-
-            document.getElementById('waterDisplay').textContent = formatNumber(water);
-            document.getElementById('wpsDisplay').textContent = formatNumber(wps);
-            document.getElementById('multiplierDisplay').textContent = gameState.globalMultiplier.toFixed(2) + 'x';
-            document.getElementById('rebirthCountDisplay').textContent = gameState.totalRebirths;
-            document.getElementById('clickValue').textContent = formatShortNumber(clickPower);
-            document.getElementById('totalOwnedDisplay').textContent = totalOwned;
-            document.getElementById('rebirthPointsDisplay').textContent = gameState.rebirthPoints;
-        }
-
-        function calculateClickPower() {
-            let clickPower = 1;
-            
-            Object.keys(gameState.upgradeCounts).forEach(upgradeId => {
-                const upgrade = upgrades.find(u => u.id === parseInt(upgradeId));
-                if (upgrade && upgrade.clickBonus) {
-                    clickPower += upgrade.clickBonus * gameState.upgradeCounts[upgradeId];
-                }
-            });
-
-            if (gameState.rebirthUpgrades[26]) {
-                clickPower *= Math.pow(1.5, gameState.rebirthUpgrades[26]);
-            }
-
-            return clickPower;
-        }
-
-        function calculateWPS() {
-            let wps = 0;
-
-            Object.keys(gameState.upgradeCounts).forEach(upgradeId => {
-                const upgrade = upgrades.find(u => u.id === parseInt(upgradeId));
-                if (upgrade && upgrade.wpsBonus) {
-                    wps += upgrade.wpsBonus * gameState.upgradeCounts[upgradeId];
-                }
-            });
-
-            if (gameState.rebirthUpgrades[27]) {
-                wps *= Math.pow(1.25, gameState.rebirthUpgrades[27]);
-            }
-
-            return wps;
-        }
-
-        function getAutoClickerStats() {
-            let autoClicks = 0;
-            let multiplier = 1;
-            
-            // Sum up auto clicker tiers
-            [31, 32, 33, 34].forEach(id => {
-                const item = rebirthShopItems.find(i => i.id === id);
-                const count = gameState.rebirthUpgrades[id] || 0;
-                if (item && item.autoClicksPerSecond) {
-                    autoClicks += item.autoClicksPerSecond * count;
-                }
-            });
-            
-            // Apply multiplier
-            [35, 36, 37].forEach(id => {
-                const item = rebirthShopItems.find(i => i.id === id);
-                const count = gameState.rebirthUpgrades[id] || 0;
-                if (item && item.autoClickMultiplier) {
-                    multiplier *= Math.pow(item.autoClickMultiplier, count);
-                }
-            });
-            
-            return Math.floor(autoClicks * multiplier);
-        }
-
-        // CLICK HANDLER
-        document.getElementById('clickArea').addEventListener('click', function(e) {
-            const clickPower = calculateClickPower();
-            gameState.water += clickPower * gameState.globalMultiplier;
-            gameState.totalClicks += 1;
-            updateDisplay();
-            createClickEffect(e.clientX, e.clientY, `+${formatShortNumber(clickPower * gameState.globalMultiplier)}`);
-        });
-
-        function createClickEffect(x, y, text) {
-            const effect = document.createElement('div');
-            effect.textContent = text;
-            effect.style.position = 'fixed';
-            effect.style.left = x + 'px';
-            effect.style.top = y + 'px';
-            effect.style.color = '#00ffff';
-            effect.style.fontWeight = 'bold';
-            effect.style.fontSize = '24px';
-            effect.style.pointerEvents = 'none';
-            effect.style.animation = 'float-up 1s ease-out forwards';
-            effect.style.textShadow = '0 0 15px rgba(0, 212, 255, 0.8)';
-            effect.style.fontFamily = "'Courier New', monospace";
-            effect.style.zIndex = '600';
-            document.body.appendChild(effect);
-
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes float-up {
-                    0% {
-                        transform: translateY(0) scale(1);
-                        opacity: 1;
-                    }
-                    100% {
-                        transform: translateY(-120px) scale(0.8);
-                        opacity: 0;
-                    }
-                }
-            `;
-            document.head.appendChild(style);
-
-            setTimeout(() => effect.remove(), 1000);
-        }
-
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'block';
-        }
-
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-            }
-        };
-
-        // UPGRADES BUTTON
-        document.getElementById('upgradesBtn').addEventListener('click', () => {
-            const grid = document.getElementById('upgradesGrid');
-            grid.innerHTML = '';
-            upgrades.forEach(upgrade => {
-                const item = document.createElement('div');
-                const count = gameState.upgradeCounts[upgrade.id] || 0;
-                const cost = calculateUpgradeCost(upgrade);
-                const canAfford = gameState.water >= cost;
-                item.className = 'upgrade-item' + (!canAfford ? ' locked' : '');
-                item.innerHTML = `
-                    <div class="upgrade-name">${upgrade.icon} ${upgrade.name}</div>
-                    <div class="upgrade-desc">${upgrade.desc}</div>
-                    <div class="upgrade-cost">◆ ${formatNumber(cost)}</div>
-                    <div class="upgrade-count">OWN: ${count}</div>
-                    <div class="upgrade-status">${canAfford ? '[ AVAILABLE ]' : '[ NEED ' + formatNumber(cost - gameState.water) + ' ]'}</div>
-                `;
-                item.onclick = () => buyUpgrade(upgrade.id);
-                grid.appendChild(item);
-            });
-            openModal('upgradesModal');
-        });
-
-        // REBIRTH SHOP BUTTON - CATEGORIZED
         document.getElementById('rebirthShopBtn').addEventListener('click', () => {
-            const modal = document.getElementById('rebirthShopModal');
-            const modalContent = modal.querySelector('.modal-content');
-            
-            // Clear and rebuild with categories
-            const categorizedContent = `
-                <div class="modal-header">
-                    <span>◆ REBIRTH SHOP</span>
-                    <button class="close-btn" onclick="closeModal('rebirthShopModal')">[X]</button>
-                </div>
-                <div id="rebirthShopCategorized"></div>
-            `;
-            
-            modalContent.innerHTML = categorizedContent;
-            
-            const container = document.getElementById('rebirthShopCategorized');
+            const content = document.getElementById('rebirthShopContent');
+            content.innerHTML = '';
             const categories = getRebirthShopsByCategory();
             
-            // Sort categories in order
-            const categoryOrder = [
-                'MULTIPLIERS',
-                'REBIRTH MULTIPLIERS',
-                'AUTO CLICKER',
-                'AUTO CLICKER ENHANCEMENTS',
-                'STARTING ITEMS',
-                'PRODUCTION UPGRADES',
-                'PASSIVE INCOME',
-                'SPECIAL'
-            ];
+            const categoryOrder = ['MULTIPLIERS', 'REBIRTH MULT', 'AUTO CLICKER', 'AUTO ENHANCE', 'STARTING', 'PRODUCTION', 'SPECIAL'];
             
             categoryOrder.forEach(categoryName => {
                 if (categories[categoryName]) {
@@ -2348,98 +1985,62 @@
                         
                         const itemEl = document.createElement('div');
                         itemEl.className = `rebirth-item-enhanced ${!canAfford ? 'locked' : ''}`;
-                        
-                        // Build description text
-                        let descText = item.desc;
-                        if (item.multiplierBoost) {
-                            descText += ` (Total: +${(item.multiplierBoost * (count + 1)).toFixed(1)}x)`;
-                        }
-                        if (item.rebirthMultiplierX) {
-                            descText += ` [Level ${count}]`;
-                        }
-                        if (item.autoClicksPerSecond) {
-                            descText = `${item.desc} [Total: ${item.autoClicksPerSecond * (count + 1)}/sec]`;
-                        }
-                        if (item.autoClickMultiplier) {
-                            descText += ` [Level ${count}]`;
-                        }
-                        if (item.clickBonusMultiplier || item.wpsBonusMultiplier) {
-                            descText += ` [Level ${count}]`;
-                        }
-                        if (item.waterRetention) {
-                            descText += ` [Level ${count}]`;
-                        }
-                        if (item.startingWater) {
-                            descText = `${item.desc}: ${formatNumber(item.startingWater * (count + 1))} [Level ${count}]`;
-                        }
-                        if (item.startingClickBonus) {
-                            descText = `${item.desc}: +${formatNumber(item.startingClickBonus * (count + 1))} [Level ${count}]`;
-                        }
-                        if (item.startingWpsBonus) {
-                            descText = `${item.desc}: +${formatNumber(item.startingWpsBonus * (count + 1))}/sec [Level ${count}]`;
-                        }
-                        
                         itemEl.innerHTML = `
                             <div class="rebirth-item-name-enhanced">${item.icon} ${item.name}</div>
-                            <div class="rebirth-item-description">${descText}</div>
+                            <div class="rebirth-item-description">${item.desc} [Level ${count}]</div>
                             <div class="rebirth-item-cost-enhanced">💎 RP: ${cost}</div>
                             <div class="rebirth-item-level">LVL: ${count}</div>
                         `;
-                        
-                        itemEl.onclick = () => buyRebirthUpgrade(item.id);
+                        itemEl.onclick = () => {
+                            if (gameState.rebirthPoints >= cost) {
+                                gameState.rebirthPoints -= cost;
+                                gameState.rebirthUpgrades[item.id] = (gameState.rebirthUpgrades[item.id] || 0) + 1;
+                                updateDisplay();
+                                showNotification(`[ UPGRADED: ${item.name} ]`);
+                                document.getElementById('rebirthShopBtn').click();
+                            } else {
+                                showNotification(`[ NEED ${cost - gameState.rebirthPoints} RP ]`);
+                            }
+                        };
                         grid.appendChild(itemEl);
                     });
                     
                     section.appendChild(grid);
-                    container.appendChild(section);
+                    content.appendChild(section);
                 }
             });
             
             openModal('rebirthShopModal');
         });
 
-        // STATS BUTTON
+        // ======== STATS BUTTON ========
         document.getElementById('statsBtn').addEventListener('click', () => {
-            const content = document.getElementById('statsContent');
-            const totalUpgradesCost = upgrades
-                .filter(u => gameState.upgradeCounts[u.id])
-                .reduce((sum, u) => {
-                    let total = 0;
-                    for (let i = 0; i < gameState.upgradeCounts[u.id]; i++) {
-                        total += Math.ceil(u.baseCost * Math.pow(1.15, i));
-                    }
-                    return sum + total;
-                }, 0);
-            
             const totalOwnedCount = Object.values(gameState.upgradeCounts).reduce((a, b) => a + b, 0);
-            const autoClickerCount = getAutoClickerStats();
-
+            const content = document.getElementById('statsContent');
             content.innerHTML = `
-                <div style="font-size: 14px; line-height: 2.8; background: linear-gradient(135deg, rgba(0, 40, 80, 0.8), rgba(0, 20, 50, 0.8)); padding: 25px; border: 2px solid #0088ff; color: #00ccff; font-family: 'Courier New', monospace; letter-spacing: 1px;">
-                    <p style="margin: 12px 0;"><strong>▼ TOTAL WATER</strong> <span style="color: #00ffff; float: right;">${formatNumber(gameState.water)}</span></p>
-                    <p style="margin: 12px 0;"><strong>👆 TOTAL CLICKS</strong> <span style="color: #00ffff; float: right;">${gameState.totalClicks}</span></p>
-                    <p style="margin: 12px 0;"><strong>▶ TOTAL REBIRTHS</strong> <span style="color: #00ffff; float: right;">${gameState.totalRebirths}</span></p>
-                    <p style="margin: 12px 0;"><strong>◆ REBIRTH POINTS</strong> <span style="color: #00ffff; float: right;">${gameState.rebirthPoints}</span></p>
-                    <p style="margin: 12px 0;"><strong>▲ ITEMS OWNED</strong> <span style="color: #00ffff; float: right;">${totalOwnedCount}</span></p>
-                    <p style="margin: 12px 0;"><strong>🤖 AUTO CLICKS/SEC</strong> <span style="color: #00ffff; float: right;">${autoClickerCount}</span></p>
-                    <p style="margin: 12px 0;"><strong>💰 TOTAL SPENT</strong> <span style="color: #00ffff; float: right;">${formatNumber(totalUpgradesCost)}</span></p>
-                    <p style="margin: 12px 0;"><strong>⚡ CURRENT WPS</strong> <span style="color: #00ffff; float: right;">${formatNumber(gameState.waterPerSecond * gameState.globalMultiplier * gameState.rainMultiplier)}</span></p>
-                    <p style="margin: 12px 0;"><strong>◆ GLOBAL MULT</strong> <span style="color: #00ffff; float: right;">${gameState.globalMultiplier.toFixed(2)}x</span></p>
+                <div style="font-size: 14px; line-height: 2.8; background: linear-gradient(135deg, rgba(0, 40, 80, 0.8), rgba(0, 20, 50, 0.8)); padding: 25px; border: 2px solid #0088ff; color: #00ccff; font-family: 'Courier New', monospace;">
+                    <p><strong>▼ TOTAL WATER</strong> <span style="color: #00ffff; float: right;">${formatNumber(gameState.water)}</span></p>
+                    <p><strong>👆 TOTAL CLICKS</strong> <span style="color: #00ffff; float: right;">${gameState.totalClicks}</span></p>
+                    <p><strong>▶ TOTAL REBIRTHS</strong> <span style="color: #00ffff; float: right;">${gameState.totalRebirths}</span></p>
+                    <p><strong>◆ REBIRTH POINTS</strong> <span style="color: #00ffff; float: right;">${gameState.rebirthPoints}</span></p>
+                    <p><strong>▲ ITEMS OWNED</strong> <span style="color: #00ffff; float: right;">${totalOwnedCount}</span></p>
+                    <p><strong>⚡ CURRENT WPS</strong> <span style="color: #00ffff; float: right;">${formatNumber(gameState.waterPerSecond * gameState.globalMultiplier)}</span></p>
+                    <p><strong>◆ GLOBAL MULT</strong> <span style="color: #00ffff; float: right;">${gameState.globalMultiplier.toFixed(2)}x</span></p>
                 </div>
             `;
             openModal('statsModal');
         });
 
-        // REBIRTH BUTTON
+        // ======== REBIRTH BUTTON ========
         document.getElementById('rebirthBtn').addEventListener('click', () => {
-            const content = document.getElementById('rebirthContent');
             const rebirthCost = calculateRebirthTotalCost();
             const canRebirth = gameState.water >= rebirthCost;
             const nextMultiplier = gameState.globalMultiplier * 1.5;
+            const content = document.getElementById('rebirthContent');
             content.innerHTML = `
                 <div class="rebirth-panel">
-                    <div class="rebirth-title">▶ REBIRTH PROTOCOL ACTIVE</div>
-                    <div class="rebirth-info">Reset progress and gain permanent bonuses<br>[REBIRTH #${gameState.totalRebirths + 1}] Cost multiplies by 10x each rebirth!</div>
+                    <div class="rebirth-title">▶ REBIRTH PROTOCOL</div>
+                    <div class="rebirth-info">Reset progress and gain permanent bonuses<br>[REBIRTH #${gameState.totalRebirths + 1}]</div>
                     <div class="rebirth-stats">
                         <div class="rebirth-stat">
                             <div class="rebirth-stat-label">CURRENT MULT</div>
@@ -2466,44 +2067,6 @@
             openModal('rebirthModal');
         });
 
-        function buyUpgrade(upgradeId) {
-            const upgrade = upgrades.find(u => u.id === upgradeId);
-            if (!upgrade) return;
-
-            const cost = calculateUpgradeCost(upgrade);
-
-            if (gameState.water < cost) {
-                showNotification(`[ NEED ${formatNumber(cost - gameState.water)} MORE ]`);
-                return;
-            }
-
-            gameState.water -= cost;
-            gameState.upgradeCounts[upgradeId] = (gameState.upgradeCounts[upgradeId] || 0) + 1;
-
-            showNotification(`[ ACQUIRED: ${upgrade.name} ]`);
-            updateDisplay();
-            document.getElementById('upgradesBtn').click();
-        }
-
-        function buyRebirthUpgrade(itemId) {
-            const item = rebirthShopItems.find(i => i.id === itemId);
-            if (!item) return;
-
-            const cost = calculateRebirthCost(item);
-
-            if (gameState.rebirthPoints < cost) {
-                showNotification(`[ NEED ${cost - gameState.rebirthPoints} RP ]`);
-                return;
-            }
-
-            gameState.rebirthPoints -= cost;
-            gameState.rebirthUpgrades[itemId] = (gameState.rebirthUpgrades[itemId] || 0) + 1;
-
-            showNotification(`[ UPGRADED: ${item.name} ]`);
-            updateDisplay();
-            document.getElementById('rebirthShopBtn').click();
-        }
-
         function performRebirth() {
             const rebirthCost = calculateRebirthTotalCost();
             if (gameState.water < rebirthCost) {
@@ -2511,50 +2074,40 @@
                 return;
             }
 
-            let basePointsGain = 10;
-            if (gameState.rebirthUpgrades[20]) {
-                basePointsGain *= Math.pow(2, gameState.rebirthUpgrades[20]);
-            }
-            if (gameState.rebirthUpgrades[21]) {
-                basePointsGain *= Math.pow(3, gameState.rebirthUpgrades[21]);
-            }
-            if (gameState.rebirthUpgrades[22]) {
-                basePointsGain *= Math.pow(5, gameState.rebirthUpgrades[22]);
-            }
-            gameState.rebirthPoints += basePointsGain;
-
-            const waterRetained = gameState.rebirthUpgrades[9] ? gameState.water * 0.1 : gameState.rebirthUpgrades[10] ? gameState.water * 0.25 : gameState.rebirthUpgrades[11] ? gameState.water * 0.5 : 0;
-
-            gameState.water = waterRetained;
+            gameState.rebirthPoints += 10;
+            gameState.water = 0;
             gameState.waterPerSecond = 0;
             gameState.totalRebirths += 1;
-
-            let multiplierGain = 1.5;
-            if (gameState.rebirthUpgrades[7]) {
-                multiplierGain *= 2;
-            }
-            if (gameState.rebirthUpgrades[8]) {
-                multiplierGain *= 3;
-            }
-            gameState.globalMultiplier *= multiplierGain;
-
-            if (gameState.rebirthUpgrades[1]) {
-                gameState.globalMultiplier += 0.5 * gameState.rebirthUpgrades[1];
-            }
-            if (gameState.rebirthUpgrades[2]) {
-                gameState.globalMultiplier += 1 * gameState.rebirthUpgrades[2];
-            }
-            if (gameState.rebirthUpgrades[3]) {
-                gameState.globalMultiplier += 2 * gameState.rebirthUpgrades[3];
-            }
-            if (gameState.rebirthUpgrades[4]) {
-                gameState.globalMultiplier += 5 * gameState.rebirthUpgrades[4];
-            }
-
-            if (gameState.rebirthUpgrades[28] && gameState.totalRebirths % 5 === 0) {
-                gameState.globalMultiplier *= 2;
-            }
-
+            gameState.globalMultiplier *= 1.5;
             gameState.upgradeCounts = {};
 
-            if (gameState.rebirthUp
+            showNotification(`[ REBIRTH #${gameState.totalRebirths} | MULT: ${gameState.globalMultiplier.toFixed(2)}x ]`);
+            saveGame();
+            closeModal('rebirthModal');
+            updateDisplay();
+        }
+
+        // ======== PASSIVE INCOME ========
+        setInterval(() => {
+            gameState.waterPerSecond = calculateWPS();
+            gameState.water += gameState.waterPerSecond * gameState.globalMultiplier;
+            updateDisplay();
+        }, 1000);
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        };
+
+        // ======== INIT ========
+        window.addEventListener('load', () => {
+            loadGame();
+            updateDisplay();
+            showNotification('[ GAME LOADED ]');
+        });
+
+        updateDisplay();
+    </script>
+</body>
+</html>

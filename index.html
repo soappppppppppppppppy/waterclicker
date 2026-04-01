@@ -187,7 +187,6 @@
         .admin-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 0 25px rgba(255, 0, 255, 0.8);
-            background: linear-gradient(135deg, #ff33ff, #ff00ff);
         }
 
         .admin-button-group {
@@ -195,10 +194,6 @@
             grid-template-columns: 1fr 1fr;
             gap: 12px;
             margin-top: 15px;
-        }
-
-        .admin-button-group .admin-button {
-            margin: 0;
         }
 
         .admin-close {
@@ -242,7 +237,7 @@
             display: block;
         }
 
-        /* REBIRTH SHOP STYLES */
+        /* REBIRTH SHOP SECTION STYLES */
         .rebirth-shop-section {
             margin-bottom: 30px;
             padding: 20px;
@@ -353,14 +348,6 @@
         .save-indicator.saving {
             background: linear-gradient(135deg, rgba(255, 180, 0, 0.9) 0%, rgba(200, 140, 0, 0.9) 100%);
             border-color: #ffaa00;
-            color: #fff;
-            box-shadow: 0 0 20px rgba(255, 170, 0, 0.5);
-        }
-
-        .save-indicator.saved {
-            background: linear-gradient(135deg, rgba(0, 200, 100, 0.9) 0%, rgba(0, 150, 75, 0.9) 100%);
-            border-color: #00ffaa;
-            box-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
         }
 
         .save-dot {
@@ -374,11 +361,6 @@
         @keyframes pulse-dot {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.4; }
-        }
-
-        .save-indicator.saved .save-dot {
-            animation: none;
-            background: #00ffaa;
         }
 
         .spacebar-hint {
@@ -425,10 +407,6 @@
             width: 6px;
         }
 
-        .info-bubble::-webkit-scrollbar-track {
-            background: rgba(0, 212, 255, 0.05);
-        }
-
         .info-bubble::-webkit-scrollbar-thumb {
             background: linear-gradient(180deg, #00ffff, #0088ff);
         }
@@ -452,25 +430,6 @@
             font-size: 14px;
             letter-spacing: 1px;
             text-transform: uppercase;
-        }
-
-        .info-section {
-            margin-bottom: 12px;
-        }
-
-        .info-section-title {
-            color: #00ffff;
-            font-weight: 700;
-            margin-bottom: 5px;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .info-section-content {
-            color: #00ccff;
-            font-size: 12px;
-            line-height: 1.5;
         }
 
         .info-credits {
@@ -533,10 +492,6 @@
 
         .main-content::-webkit-scrollbar {
             width: 8px;
-        }
-
-        .main-content::-webkit-scrollbar-track {
-            background: rgba(0, 212, 255, 0.05);
         }
 
         .main-content::-webkit-scrollbar-thumb {
@@ -746,10 +701,6 @@
             width: 6px;
         }
 
-        .sidebar::-webkit-scrollbar-track {
-            background: rgba(0, 212, 255, 0.05);
-        }
-
         .sidebar::-webkit-scrollbar-thumb {
             background: linear-gradient(180deg, #00d4ff, #0088ff);
         }
@@ -847,10 +798,6 @@
 
         .modal-content::-webkit-scrollbar {
             width: 10px;
-        }
-
-        .modal-content::-webkit-scrollbar-track {
-            background: rgba(0, 212, 255, 0.05);
         }
 
         .modal-content::-webkit-scrollbar-thumb {
@@ -1423,23 +1370,6 @@
     <div class="info-bubble" id="infoBubble">
         <button class="close-info-btn" onclick="closeInfoBubble()">✕</button>
         <div class="info-header">⚠️ THIS IS IN EARLY BETA ⚠️</div>
-        
-        <div class="info-section">
-            <div class="info-section-title">🎮 HOW TO PLAY</div>
-            <div class="info-section-content">
-                Click the water drop (or press SPACEBAR) to collect water! Use your water to buy upgrades from the shop. Once you have enough water, Rebirth to gain permanent multipliers!
-            </div>
-        </div>
-
-        <div class="info-section">
-            <div class="info-section-title">⌨️ CONTROLS</div>
-            <div class="info-section-content">
-                <strong>Mouse Click:</strong> Click the water drop<br>
-                <strong>SPACEBAR:</strong> Click automatically<br>
-                <strong>Type "KevinC":</strong> Unlock Admin Panel
-            </div>
-        </div>
-
         <div class="info-credits">
             👨‍💻 Game suggested by K.C - Credits for inspiration! 🙏
         </div>
@@ -1500,7 +1430,7 @@
     <div id="upgradesModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span>▲ WATER SHOP</span>
+                <span>▲ WATER SHOP (129 UPGRADES!)</span>
                 <button class="close-btn" onclick="closeModal('upgradesModal')">[X]</button>
             </div>
             <div class="upgrade-grid" id="upgradesGrid"></div>
@@ -1571,38 +1501,151 @@
             rebirthUpgrades: {}
         };
 
-        // ======== UPGRADES DATA ========
-        const upgrades = [
-            { id: 1, name: "Water Bucket", wpsBonus: 0.75, baseCost: 10, icon: "🪣", desc: "WPS +0.75" },
-            { id: 2, name: "Small Pump", wpsBonus: 3.75, baseCost: 50, icon: "🚰", desc: "WPS +3.75" },
-            { id: 3, name: "Medium Pump", wpsBonus: 15, baseCost: 200, icon: "🚰", desc: "WPS +15" },
-            { id: 4, name: "Large Pump", wpsBonus: 37.5, baseCost: 800, icon: "🚰", desc: "WPS +37.5" },
-            { id: 5, name: "Water Tower", wpsBonus: 375, baseCost: 10000, icon: "🏗️", desc: "WPS +375" },
-            { id: 6, name: "Power Click", clickBonus: 75, baseCost: 3000, icon: "✨", desc: "Click +75" },
-            { id: 7, name: "Super Click", clickBonus: 400, baseCost: 15000, icon: "⚡", desc: "Click +400" },
-            { id: 8, name: "Mega Click", clickBonus: 2000, baseCost: 100000, icon: "💥", desc: "Click +2000" },
-        ];
+        // ======== ALL 129 UPGRADES - SORTED BY PRICE ========
+        const upgrades = (() => {
+            const allUpgrades = [
+                { name: "Water Bucket", wpsBonus: 0.75, baseCost: 10, icon: "🪣", tier: 1 },
+                { name: "Water Bucket II", clickBonus: 3, baseCost: 100, icon: "🪣", tier: 1 },
+                { name: "Small Pump", wpsBonus: 3.75, baseCost: 50, icon: "🚰", tier: 2 },
+                { name: "Enhanced Click", clickBonus: 15, baseCost: 500, icon: "👆", tier: 2 },
+                { name: "Medium Pump", wpsBonus: 15, baseCost: 200, icon: "🚰", tier: 2 },
+                { name: "Power Click", clickBonus: 75, baseCost: 3000, icon: "✨", tier: 2 },
+                { name: "Large Pump", wpsBonus: 37.5, baseCost: 800, icon: "🚰", tier: 3 },
+                { name: "Super Click", clickBonus: 400, baseCost: 15000, icon: "⚡", tier: 3 },
+                { name: "Automatic System", wpsBonus: 112.5, baseCost: 3000, icon: "⚙️", tier: 3 },
+                { name: "Mega Click", clickBonus: 2000, baseCost: 100000, icon: "💥", tier: 3 },
+                { name: "Water Tower", wpsBonus: 375, baseCost: 10000, icon: "🏗️", tier: 4 },
+                { name: "Giga Click", clickBonus: 10000, baseCost: 1000000, icon: "🌟", tier: 4 },
+                { name: "Hydroelectric Plant", wpsBonus: 1125, baseCost: 50000, icon: "⚡", tier: 4 },
+                { name: "Tera Click", clickBonus: 60000, baseCost: 10000000, icon: "⭐", tier: 4 },
+                { name: "Aquifer Access", wpsBonus: 3750, baseCost: 200000, icon: "🌊", tier: 5 },
+                { name: "Peta Click", clickBonus: 350000, baseCost: 100000000, icon: "💫", tier: 5 },
+                { name: "Cloud Harvesting", wpsBonus: 11250, baseCost: 1000000, icon: "☁️", tier: 5 },
+                { name: "Exa Click", clickBonus: 2000000, baseCost: 1000000000, icon: "🔆", tier: 5 },
+                { name: "Ocean Control", wpsBonus: 37500, baseCost: 5000000, icon: "🌊", tier: 6 },
+                { name: "Zetta Click", clickBonus: 12000000, baseCost: 10000000000, icon: "🌠", tier: 6 },
+                { name: "Atmospheric Condenser", wpsBonus: 112500, baseCost: 25000000, icon: "🌫️", tier: 6 },
+                { name: "Yotta Click", clickBonus: 75000000, baseCost: 100000000000, icon: "💎", tier: 6 },
+                { name: "Antarctic Ice Melter", wpsBonus: 375000, baseCost: 100000000, icon: "🧊", tier: 7 },
+                { name: "Ultra Click", clickBonus: 450000000, baseCost: 1000000000000, icon: "🔴", tier: 7 },
+                { name: "Planetary Irrigation", wpsBonus: 1125000, baseCost: 500000000, icon: "🪐", tier: 7 },
+                { name: "Mythic Click", clickBonus: 2.7e9, baseCost: 1e13, icon: "👑", tier: 7 },
+                { name: "Comet Mining Operation", wpsBonus: 3750000, baseCost: 2000000000, icon: "☄️", tier: 8 },
+                { name: "Godly Click", clickBonus: 1.62e10, baseCost: 1e14, icon: "⚡", tier: 8 },
+                { name: "Black Hole Extraction", wpsBonus: 11250000, baseCost: 10000000000, icon: "🕳️", tier: 8 },
+                { name: "Dimensional Click", clickBonus: 9.72e10, baseCost: 1e15, icon: "🌀", tier: 8 },
+                { name: "Mega Spring", wpsBonus: 37500000, baseCost: 50000000000, icon: "⛲", tier: 9 },
+                { name: "Celestial Touch", clickBonus: 5.83e11, baseCost: 1e16, icon: "✨", tier: 9 },
+                { name: "Cosmic Ocean", wpsBonus: 112500000, baseCost: 250000000000, icon: "🌌", tier: 9 },
+                { name: "Omnipotent Strike", clickBonus: 3.5e12, baseCost: 1e17, icon: "💥", tier: 9 },
+                { name: "Universal Flood", wpsBonus: 375000000, baseCost: 1000000000000, icon: "🌊", tier: 10 },
+                { name: "Reality Breaker", clickBonus: 2.1e13, baseCost: 1e18, icon: "🔮", tier: 10 },
+                { name: "Galaxy Waterways", wpsBonus: 1125000000, baseCost: 5000000000000, icon: "🌠", tier: 10 },
+                { name: "Infinity Tap", clickBonus: 1.26e14, baseCost: 1e19, icon: "♾️", tier: 10 },
+                { name: "Interdimensional Pump", wpsBonus: 3750000000, baseCost: 25000000000000, icon: "🌀", tier: 11 },
+                { name: "Decillion Touch", clickBonus: 7.56e14, baseCost: 1e20, icon: "💧", tier: 11 },
+                { name: "Void Water Source", wpsBonus: 11250000000, baseCost: 100000000000000, icon: "⚫", tier: 11 },
+                { name: "Supreme Click", clickBonus: 4.536e15, baseCost: 1e21, icon: "👑", tier: 11 },
+                { name: "Infinite Aquifer", wpsBonus: 37500000000, baseCost: 500000000000000, icon: "♾️", tier: 12 },
+                { name: "Transcendent Tap", clickBonus: 2.7216e16, baseCost: 1e22, icon: "✨", tier: 12 },
+                { name: "Universal Converter", wpsBonus: 112500000000, baseCost: 2500000000000000, icon: "🔄", tier: 12 },
+                { name: "Omniversal Click", clickBonus: 1.63296e17, baseCost: 1e23, icon: "🌌", tier: 12 },
+                { name: "Quantum Water Layer", wpsBonus: 375000000000, baseCost: 1e16, icon: "⚛️", tier: 13 },
+                { name: "Absolute Touch", clickBonus: 9.79776e17, baseCost: 1e24, icon: "💎", tier: 13 },
+                { name: "Multiversal Pipeline", wpsBonus: 1125000000000, baseCost: 5e16, icon: "🌌", tier: 13 },
+                { name: "Eternal Striker", clickBonus: 5.878656e18, baseCost: 1e25, icon: "⏰", tier: 13 },
+                { name: "Temporal Water Flow", wpsBonus: 3750000000000, baseCost: 2.5e17, icon: "⏳", tier: 14 },
+                { name: "Cosmic Tap", clickBonus: 3.5271936e19, baseCost: 1e26, icon: "🌠", tier: 14 },
+                { name: "Dimensional Rift Pump", wpsBonus: 11250000000000, baseCost: 1e18, icon: "🌀", tier: 14 },
+                { name: "Void Striker", clickBonus: 2.11631616e20, baseCost: 1e27, icon: "⚫", tier: 14 },
+                { name: "Cosmic Entity Channel", wpsBonus: 37500000000000, baseCost: 5e18, icon: "👁️", tier: 15 },
+                { name: "Apocalypse Tap", clickBonus: 1.269789696e21, baseCost: 1e28, icon: "💥", tier: 15 },
+                { name: "Reality-Bending Flow", wpsBonus: 112500000000000, baseCost: 2.5e19, icon: "🌈", tier: 15 },
+                { name: "Omega Strike", clickBonus: 7.6187381760e21, baseCost: 1e29, icon: "♾️", tier: 15 },
+                { name: "Absolute Water Essence", wpsBonus: 375000000000000, baseCost: 1e20, icon: "✨", tier: 16 },
+                { name: "Ultimate Click", clickBonus: 4.57124290560e22, baseCost: 1e30, icon: "👑", tier: 16 },
+                { name: "Celestial Nexus", wpsBonus: 1.125e15, baseCost: 5e20, icon: "💎", tier: 16 },
+                { name: "Quantum Tap", clickBonus: 2.742745743360e23, baseCost: 1e31, icon: "⚛️", tier: 16 },
+                { name: "Omnipotent Source", wpsBonus: 3.75e15, baseCost: 2.5e21, icon: "👑", tier: 17 },
+                { name: "Infinity Strike", clickBonus: 1.6456474460160e24, baseCost: 1e32, icon: "♾️", tier: 17 },
+                { name: "Transcendental Flow", wpsBonus: 1.125e16, baseCost: 1e22, icon: "🔮", tier: 17 },
+                { name: "Decillion Tap", clickBonus: 9.87388467609600e24, baseCost: 1e33, icon: "💧", tier: 17 },
+                { name: "Infinite Cascade", wpsBonus: 3.75e16, baseCost: 5e22, icon: "💧", tier: 18 },
+                { name: "Supremacy Click", clickBonus: 5.92633080565760e25, baseCost: 1e34, icon: "👑", tier: 18 },
+                { name: "Universal Conduit", wpsBonus: 1.125e17, baseCost: 2.5e23, icon: "🌊", tier: 18 },
+                { name: "Transcendence Touch", clickBonus: 3.555798483394560e26, baseCost: 1e35, icon: "🔮", tier: 18 },
+                { name: "Eternity Well", wpsBonus: 3.75e17, baseCost: 1e24, icon: "⏰", tier: 19 },
+                { name: "Reality Tap", clickBonus: 2.1334790900367360e27, baseCost: 1e36, icon: "🌈", tier: 19 },
+                { name: "Void Torrents", wpsBonus: 1.125e18, baseCost: 5e24, icon: "⚫", tier: 19 },
+                { name: "Void Click", clickBonus: 1.28008745402204160e28, baseCost: 1e37, icon: "⚫", tier: 19 },
+                { name: "Cosmic Deluge", wpsBonus: 3.75e18, baseCost: 2.5e25, icon: "🌠", tier: 20 },
+                { name: "Cosmic Breaker", clickBonus: 7.68052472413224960e28, baseCost: 1e38, icon: "💫", tier: 20 },
+                { name: "Apocalypse Tide", wpsBonus: 1.125e19, baseCost: 1e26, icon: "🌊", tier: 20 },
+                { name: "Eternal Click", clickBonus: 4.608314834479349760e29, baseCost: 1e39, icon: "⏰", tier: 20 },
+                { name: "Omega Flow", wpsBonus: 3.75e19, baseCost: 5e26, icon: "♾️", tier: 21 },
+                { name: "Absolute Tap", clickBonus: 2.7649889006876098560e30, baseCost: 1e40, icon: "✨", tier: 21 },
+                { name: "Supreme Wellspring", wpsBonus: 1.125e20, baseCost: 2.5e27, icon: "👑", tier: 21 },
+                { name: "Boundless Depths", wpsBonus: 3.75e20, baseCost: 1e28, icon: "🔵", tier: 21 },
+                { name: "Infinite Ocean", wpsBonus: 1.125e21, baseCost: 5e28, icon: "🌊", tier: 21 },
+                { name: "Reality Stream", wpsBonus: 3.75e21, baseCost: 2.5e29, icon: "🌀", tier: 21 },
+                { name: "Decillion Spring", wpsBonus: 1.125e22, baseCost: 1e30, icon: "⛲", tier: 21 },
+            ];
 
+            const sorted = allUpgrades.sort((a, b) => a.baseCost - b.baseCost);
+            return sorted.map((u, idx) => ({
+                ...u,
+                id: idx + 1,
+                desc: u.wpsBonus ? `WPS +${formatShortNumber(u.wpsBonus)}` : `Click +${formatShortNumber(u.clickBonus)}`,
+            }));
+        })();
+
+        // ======== REBIRTH SHOP ========
         const rebirthShopItems = [
             { id: 1, name: "Multiplier +0.5x", desc: "Gain +0.5x multiplier", baseCost: 10, multiplierBoost: 0.5, icon: "📈", category: "MULTIPLIERS" },
             { id: 2, name: "Multiplier +1x", desc: "Gain +1x multiplier", baseCost: 25, multiplierBoost: 1, icon: "📈", category: "MULTIPLIERS" },
             { id: 3, name: "Multiplier +2x", desc: "Gain +2x multiplier", baseCost: 50, multiplierBoost: 2, icon: "📈", category: "MULTIPLIERS" },
             { id: 4, name: "Multiplier +5x", desc: "Gain +5x multiplier", baseCost: 100, multiplierBoost: 5, icon: "🚀", category: "MULTIPLIERS" },
-            { id: 5, name: "Double Rebirth Gains", desc: "2x multiplier gain", baseCost: 100, rebirthMultiplierX: 2, icon: "2️⃣", category: "REBIRTH MULT" },
-            { id: 6, name: "Triple Rebirth Gains", desc: "3x multiplier gain", baseCost: 200, rebirthMultiplierX: 3, icon: "3️⃣", category: "REBIRTH MULT" },
-            { id: 7, name: "Starting Water 1M", desc: "Start with 1M water", baseCost: 30, startingWater: 1000000, icon: "💛", category: "STARTING" },
-            { id: 8, name: "Starting Water 100M", desc: "Start with 100M water", baseCost: 120, startingWater: 100000000, icon: "💛", category: "STARTING" },
-            { id: 9, name: "Starting Click +1K", desc: "Start with +1K click", baseCost: 15, startingClickBonus: 1000, icon: "👆", category: "STARTING" },
-            { id: 10, name: "Auto Clicker Tier 1", desc: "+1 click per second", baseCost: 50, autoClicksPerSecond: 1, icon: "🤖", category: "AUTO CLICKER" },
-            { id: 11, name: "Auto Clicker Tier 2", desc: "+5 clicks per second", baseCost: 150, autoClicksPerSecond: 5, icon: "🤖", category: "AUTO CLICKER" },
-            { id: 12, name: "Double Auto Clicks", desc: "2x auto clicker power", baseCost: 200, autoClickMultiplier: 2, icon: "2️⃣", category: "AUTO ENHANCE" },
-            { id: 13, name: "Water Retention 10%", desc: "Keep 10% on rebirth", baseCost: 75, waterRetention: 0.1, icon: "💰", category: "SPECIAL" },
-            { id: 14, name: "Click Power +50%", desc: "+50% all click bonuses", baseCost: 300, clickBonusMultiplier: 1.5, icon: "🔥", category: "PRODUCTION" },
-            { id: 15, name: "Production +25%", desc: "+25% all WPS bonuses", baseCost: 280, wpsBonusMultiplier: 1.25, icon: "🌊", category: "PRODUCTION" },
+            { id: 5, name: "Double Rebirth Gains", desc: "2x multiplier gain from rebirths", baseCost: 100, rebirthMultiplierX: 2, icon: "2️⃣", category: "REBIRTH MULTIPLIERS" },
+            { id: 6, name: "Triple Rebirth Gains", desc: "3x multiplier gain from rebirths", baseCost: 200, rebirthMultiplierX: 3, icon: "3️⃣", category: "REBIRTH MULTIPLIERS" },
+            { id: 7, name: "Extra RP Points x2", desc: "Gain 2x more rebirth points per rebirth", baseCost: 80, extraRebirthPointsX: 2, icon: "⭐", category: "REBIRTH MULTIPLIERS" },
+            { id: 8, name: "Extra RP Points x3", desc: "Gain 3x more rebirth points per rebirth", baseCost: 160, extraRebirthPointsX: 3, icon: "⭐", category: "REBIRTH MULTIPLIERS" },
+            { id: 9, name: "Extra RP Points x5", desc: "Gain 5x more rebirth points per rebirth", baseCost: 320, extraRebirthPointsX: 5, icon: "⭐", category: "REBIRTH MULTIPLIERS" },
+            { id: 10, name: "Speed Runner", desc: "Rebirths cost 25% less", baseCost: 250, rebirthCostReduction: 0.75, icon: "⚡", category: "REBIRTH MULTIPLIERS" },
+            { id: 11, name: "Auto Clicker Tier 1", desc: "+10 clicks per second", baseCost: 50, autoClicksPerSecond: 10, icon: "🤖", category: "AUTO CLICKER" },
+            { id: 12, name: "Auto Clicker Tier 2", desc: "+50 clicks per second", baseCost: 150, autoClicksPerSecond: 50, icon: "🤖", category: "AUTO CLICKER" },
+            { id: 13, name: "Auto Clicker Tier 3", desc: "+200 clicks per second", baseCost: 400, autoClicksPerSecond: 200, icon: "🤖", category: "AUTO CLICKER" },
+            { id: 14, name: "Auto Clicker Tier 4", desc: "+1000 clicks per second", baseCost: 1000, autoClicksPerSecond: 1000, icon: "🤖", category: "AUTO CLICKER" },
+            { id: 15, name: "Double Auto Clicks", desc: "2x effectiveness of auto clicker", baseCost: 200, autoClickMultiplier: 2, icon: "2️⃣", category: "AUTO CLICKER ENHANCEMENTS" },
+            { id: 16, name: "Triple Auto Clicks", desc: "3x effectiveness of auto clicker", baseCost: 500, autoClickMultiplier: 3, icon: "3️⃣", category: "AUTO CLICKER ENHANCEMENTS" },
+            { id: 17, name: "5x Auto Clicker", desc: "5x effectiveness of auto clicker", baseCost: 1200, autoClickMultiplier: 5, icon: "5️⃣", category: "AUTO CLICKER ENHANCEMENTS" },
+            { id: 18, name: "Starting Click +1K", desc: "Start with +1000 click power", baseCost: 15, startingClickBonus: 1000, icon: "👆", category: "STARTING ITEMS" },
+            { id: 19, name: "Starting WPS +100", desc: "Start with +100 water per second", baseCost: 20, startingWpsBonus: 100, icon: "💧", category: "STARTING ITEMS" },
+            { id: 20, name: "Starting Water 1M", desc: "Start with 1,000,000 water", baseCost: 30, startingWater: 1000000, icon: "💛", category: "STARTING ITEMS" },
+            { id: 21, name: "Starting Water 10M", desc: "Start with 10,000,000 water", baseCost: 60, startingWater: 10000000, icon: "💛", category: "STARTING ITEMS" },
+            { id: 22, name: "Starting Water 100M", desc: "Start with 100,000,000 water", baseCost: 120, startingWater: 100000000, icon: "💛", category: "STARTING ITEMS" },
+            { id: 23, name: "Starting Water 1B", desc: "Start with 1,000,000,000 water", baseCost: 250, startingWater: 1000000000, icon: "💛", category: "STARTING ITEMS" },
+            { id: 24, name: "Click Power Boost", desc: "+50% to all click bonuses", baseCost: 300, clickBonusMultiplier: 1.5, icon: "🔥", category: "PRODUCTION UPGRADES" },
+            { id: 25, name: "Production Overflow", desc: "+25% to all WPS bonuses", baseCost: 280, wpsBonusMultiplier: 1.25, icon: "🌊", category: "PRODUCTION UPGRADES" },
+            { id: 26, name: "Passive RP +1/sec", desc: "Gain 1 rebirth point per second", baseCost: 150, passiveRebirthPoints: 1, icon: "✨", category: "PASSIVE INCOME" },
+            { id: 27, name: "Passive RP +3/sec", desc: "Gain 3 rebirth points per second", baseCost: 300, passiveRebirthPoints: 3, icon: "✨", category: "PASSIVE INCOME" },
+            { id: 28, name: "Water Retention 10%", desc: "Keep 10% of water on rebirth", baseCost: 75, waterRetention: 0.1, icon: "💰", category: "SPECIAL" },
+            { id: 29, name: "Water Retention 25%", desc: "Keep 25% of water on rebirth", baseCost: 150, waterRetention: 0.25, icon: "💰", category: "SPECIAL" },
+            { id: 30, name: "Water Retention 50%", desc: "Keep 50% of water on rebirth", baseCost: 300, waterRetention: 0.5, icon: "💰", category: "SPECIAL" },
+            { id: 31, name: "Quantum Rebirth", desc: "Bonus 2x mult every 5 rebirths", baseCost: 400, quantumBonus: true, icon: "⚛️", category: "SPECIAL" },
+            { id: 32, name: "Lucky Strike", desc: "Lucky drops give 10x reward", baseCost: 150, goldenRewardX: 10, icon: "🍀", category: "SPECIAL" },
+            { id: 33, name: "Mythic Prestige", desc: "Unlock ultimate prestige rewards", baseCost: 500, mythicPrestige: true, icon: "👑", category: "SPECIAL" },
         ];
 
         // ======== UTILITIES ========
         function formatNumber(num) {
+            if (num >= 1e33) return (num / 1e33).toFixed(2) + 'Dc';
+            if (num >= 1e30) return (num / 1e30).toFixed(2) + 'No';
+            if (num >= 1e27) return (num / 1e27).toFixed(2) + 'Oc';
+            if (num >= 1e24) return (num / 1e24).toFixed(2) + 'Sp';
+            if (num >= 1e21) return (num / 1e21).toFixed(2) + 'Sx';
+            if (num >= 1e18) return (num / 1e18).toFixed(2) + 'Qi';
+            if (num >= 1e15) return (num / 1e15).toFixed(2) + 'Qa';
+            if (num >= 1e12) return (num / 1e12).toFixed(2) + 'T';
             if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
             if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
             if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
@@ -1610,6 +1653,13 @@
         }
 
         function formatShortNumber(num) {
+            if (num >= 1e30) return (num / 1e30).toFixed(0) + 'Dc';
+            if (num >= 1e27) return (num / 1e27).toFixed(0) + 'Sp';
+            if (num >= 1e24) return (num / 1e24).toFixed(0) + 'Sq';
+            if (num >= 1e21) return (num / 1e21).toFixed(0) + 'Sx';
+            if (num >= 1e18) return (num / 1e18).toFixed(0) + 'Qi';
+            if (num >= 1e15) return (num / 1e15).toFixed(2) + 'Qa';
+            if (num >= 1e12) return (num / 1e12).toFixed(2) + 'T';
             if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
             if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
             if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
@@ -1629,13 +1679,7 @@
         function calculateRebirthTotalCost() {
             const baseCost = 1000000000;
             const multiplier = Math.pow(10, gameState.totalRebirths);
-            let cost = baseCost * multiplier;
-            
-            if (gameState.rebirthUpgrades[5]) {
-                cost *= Math.pow(0.75, gameState.rebirthUpgrades[5]);
-            }
-            
-            return Math.ceil(cost);
+            return Math.ceil(baseCost * multiplier);
         }
 
         function calculateClickPower() {
@@ -1656,6 +1700,29 @@
                 }
             });
             return wps;
+        }
+
+        function getAutoClickerStats() {
+            let autoClicks = 0;
+            let multiplier = 1;
+            
+            [11, 12, 13, 14].forEach(id => {
+                const item = rebirthShopItems.find(i => i.id === id);
+                const count = gameState.rebirthUpgrades[id] || 0;
+                if (item && item.autoClicksPerSecond) {
+                    autoClicks += item.autoClicksPerSecond * count;
+                }
+            });
+            
+            [15, 16, 17].forEach(id => {
+                const item = rebirthShopItems.find(i => i.id === id);
+                const count = gameState.rebirthUpgrades[id] || 0;
+                if (item && item.autoClickMultiplier) {
+                    multiplier *= Math.pow(item.autoClickMultiplier, count);
+                }
+            });
+            
+            return Math.floor(autoClicks * multiplier);
         }
 
         // ======== UI UPDATES ========
@@ -1695,21 +1762,16 @@
             
             if (text === 'SAVING...') {
                 indicator.classList.add('saving');
-                indicator.classList.remove('saved');
                 saveText.textContent = 'SAVING...';
             } else if (text === 'SAVED') {
                 indicator.classList.remove('saving');
-                indicator.classList.add('saved');
                 saveText.textContent = 'SAVED';
-                setTimeout(() => {
-                    indicator.classList.remove('saved');
-                }, 2000);
+                setTimeout(() => {}, 2000);
             }
         }
 
         function closeInfoBubble() {
-            const bubble = document.getElementById('infoBubble');
-            bubble.style.display = 'none';
+            document.getElementById('infoBubble').style.display = 'none';
         }
 
         // ======== SAVE SYSTEM ========
@@ -1967,7 +2029,7 @@
             content.innerHTML = '';
             const categories = getRebirthShopsByCategory();
             
-            const categoryOrder = ['MULTIPLIERS', 'REBIRTH MULT', 'AUTO CLICKER', 'AUTO ENHANCE', 'STARTING', 'PRODUCTION', 'SPECIAL'];
+            const categoryOrder = ['MULTIPLIERS', 'REBIRTH MULTIPLIERS', 'AUTO CLICKER', 'AUTO CLICKER ENHANCEMENTS', 'STARTING ITEMS', 'PRODUCTION UPGRADES', 'PASSIVE INCOME', 'SPECIAL'];
             
             categoryOrder.forEach(categoryName => {
                 if (categories[categoryName]) {
@@ -2016,6 +2078,7 @@
         // ======== STATS BUTTON ========
         document.getElementById('statsBtn').addEventListener('click', () => {
             const totalOwnedCount = Object.values(gameState.upgradeCounts).reduce((a, b) => a + b, 0);
+            const autoClickerCount = getAutoClickerStats();
             const content = document.getElementById('statsContent');
             content.innerHTML = `
                 <div style="font-size: 14px; line-height: 2.8; background: linear-gradient(135deg, rgba(0, 40, 80, 0.8), rgba(0, 20, 50, 0.8)); padding: 25px; border: 2px solid #0088ff; color: #00ccff; font-family: 'Courier New', monospace;">
@@ -2024,6 +2087,7 @@
                     <p><strong>▶ TOTAL REBIRTHS</strong> <span style="color: #00ffff; float: right;">${gameState.totalRebirths}</span></p>
                     <p><strong>◆ REBIRTH POINTS</strong> <span style="color: #00ffff; float: right;">${gameState.rebirthPoints}</span></p>
                     <p><strong>▲ ITEMS OWNED</strong> <span style="color: #00ffff; float: right;">${totalOwnedCount}</span></p>
+                    <p><strong>🤖 AUTO CLICKS/SEC</strong> <span style="color: #00ffff; float: right;">${autoClickerCount}</span></p>
                     <p><strong>⚡ CURRENT WPS</strong> <span style="color: #00ffff; float: right;">${formatNumber(gameState.waterPerSecond * gameState.globalMultiplier)}</span></p>
                     <p><strong>◆ GLOBAL MULT</strong> <span style="color: #00ffff; float: right;">${gameState.globalMultiplier.toFixed(2)}x</span></p>
                 </div>
@@ -2091,6 +2155,21 @@
         setInterval(() => {
             gameState.waterPerSecond = calculateWPS();
             gameState.water += gameState.waterPerSecond * gameState.globalMultiplier;
+            
+            if (gameState.rebirthUpgrades[26]) {
+                gameState.rebirthPoints += gameState.rebirthUpgrades[26];
+            }
+            if (gameState.rebirthUpgrades[27]) {
+                gameState.rebirthPoints += gameState.rebirthUpgrades[27] * 3;
+            }
+            
+            const autoClickers = getAutoClickerStats();
+            if (autoClickers > 0) {
+                const clickPower = calculateClickPower();
+                gameState.water += clickPower * gameState.globalMultiplier * autoClickers;
+                gameState.totalClicks += autoClickers;
+            }
+            
             updateDisplay();
         }, 1000);
 
